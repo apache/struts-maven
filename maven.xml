@@ -69,6 +69,10 @@
 		  	
 	</goal>
 
+	<postGoal name="dist">
+		<attainGoal name="jar:install"/>
+	</postGoal>
+
 	<postGoal name="dist:prepare-bin-filesystem">
 		<!-- Copy Instructions and Readmes -->
 		<ant:copy todir="${maven.dist.bin.assembly.dir}">
