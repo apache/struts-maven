@@ -35,11 +35,20 @@
 
 
 	<goal name="build-all">
+
 		  	<maven:reactor
 			      basedir="../"
 			      includes="*/project.xml"
 			      excludes="build/project.xml"
 			      goals="dist"
+			      banner="Building nightlies"
+		      ignoreFailures="true"/>
+
+		  	<maven:reactor
+			      basedir="../"
+			      includes="*/project.xml"
+			      excludes="build/project.xml"
+			      goals="copy-distribution"
 			      banner="Building nightlies"
 		      ignoreFailures="true"/>
 
@@ -70,12 +79,6 @@
 		  </ant:fileset>
 		</ant:copy>
 		
-		<ant:copy todir="../build/${today}/${pom.artifactId}-${pom.currentVersion}">
-		  <ant:fileset dir="${maven.build.dir}/distributions">
-			<ant:include name="*"/>
-		  </ant:fileset>
-		</ant:copy>
-
 	</postGoal>
 
   <postGoal name="dist:prepare-src-filesystem">
@@ -98,4 +101,14 @@
       </ant:fileset>
     </ant:copy>
   </postGoal>
+
+  <goal name="copy-distribution">
+	<ant:copy todir="../build/${today}/${pom.artifactId}-${pom.currentVersion}">
+	  <ant:fileset dir="${maven.build.dir}/distributions">
+		<ant:include name="*"/>
+	  </ant:fileset>
+	</ant:copy>
+  </goal>
+
+
 </project>
