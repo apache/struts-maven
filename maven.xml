@@ -149,6 +149,14 @@
         <ant:include name="INSTALL*"/>
       </ant:fileset>
     </ant:copy>
-  </postGoal>
 
+    <!-- Copy Maven Control files -->
+    <ant:copy todir="${maven.dist.src.assembly.dir}/build">
+      <ant:fileset dir="build">
+        <ant:include name="project.*"/>
+        <ant:include name="*.xml"/>
+        <ant:include name="*.jsl"/>
+      </ant:fileset>
+    </ant:copy>
+  </postGoal>
 </project>
