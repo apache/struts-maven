@@ -50,6 +50,12 @@
 	  ignoreFailures="false"
 	/>
 	
+	<maven:maven
+	  descriptor="../faces/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
   </goal>
     
   <goal name="clean-all">
@@ -95,11 +101,93 @@
 	  ignoreFailures="false"
 	/>
 	
+	<maven:maven
+	  descriptor="../faces/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
   </goal>
 
   <postGoal name="dist">
 	<attainGoal name="jar:install"/>
   </postGoal>
+  
+  
+<goal name="struts:gather:all:distributions">
+
+  	<maven:maven
+  	  descriptor="../core/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+  	<maven:maven
+  	  descriptor="../taglib/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+  	<maven:maven
+  	  descriptor="../tiles/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+  	<maven:maven
+  	  descriptor="../el/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+  	<maven:maven
+  	  descriptor="../bsf/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+  	<maven:maven
+  	  descriptor="../flow/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+  	<maven:maven
+  	  descriptor="../faces/project.xml"
+  	  goals="struts:gather:distribution"
+  	  ignoreFailures="false"
+  	/>
+  	
+	  <tstamp>
+	    <format property="now" pattern="yyyy-MM-dd"/>
+	  </tstamp>
+	  
+	  <j:set var="distributions"  value="target/distributions"/>	  
+	  <j:set var="build" value="../build"/>
+	  <j:set var="dir"   value="${build}/${now}"/>
+	  
+	  <ant:copy todir="${dir}">
+		<ant:fileset dir="../apps/blank/target/">
+	        <ant:include name="struts-blank.war"/>
+		</ant:fileset>
+	  </ant:copy>
+
+	  <ant:copy todir="${dir}">
+		<ant:fileset dir="../apps/shared/target/">
+	        <ant:include name="struts-mailreader.war"/>
+		</ant:fileset>
+	  </ant:copy>
+
+	  <ant:copy todir="${dir}">
+		<ant:fileset dir="../apps/examples/target/">
+	        <ant:include name="struts-examples.war"/>
+		</ant:fileset>
+	  </ant:copy>
+
+  </goal>
+
+  
+  
   
   <goal name="struts:gather:distribution">
 	  <tstamp>
