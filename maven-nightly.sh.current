@@ -1,0 +1,20 @@
+#!/bin/sh
+# 
+# This bash shell script executes the necessary commands to 
+# build a nightly distribution and publish it to the Apache hardware.
+# 
+
+TODAY=`date +%Y%m%d`
+
+cd ../
+svn up > build/nightly/logs/svn-update-$TODAY.log
+cd build
+maven nightly > nightly/logs/maven-build-$TODAY.log
+
+scp -r nightly cvs.apache.org:/www/cvs.apache.org/builds/struts/maven/
+
+ssh cvs.apache.org find /www/cvs.apache.org/builds/struts/maven/nightly -mtime +7 -exec rm -fr {} \;
+
+
+
+
