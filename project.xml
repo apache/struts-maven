@@ -270,7 +270,6 @@
       <url>http://jakarta.apache.org/commons/beanutils/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
     
@@ -281,7 +280,6 @@
       <url>http://jakarta.apache.org/commons/chain/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
   
@@ -292,7 +290,6 @@
       <url>http://jakarta.apache.org/commons/digester/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
     
@@ -303,7 +300,6 @@
       <url>http://jakarta.apache.org/commons/fileupload/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
     
@@ -314,7 +310,6 @@
       <url>http://jakarta.apache.org/commons/logging/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
     
@@ -325,7 +320,6 @@
       <url>http://jakarta.apache.org/commons/validator/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
     
@@ -336,7 +330,6 @@
       <url>http://jakarta.apache.org/oro/</url>
       <properties>
         <war.bundle>true</war.bundle>
-        <cactus.bundle>true</cactus.bundle>
       </properties>
     </dependency>
     
@@ -367,16 +360,13 @@
   <!-- ################################################################ -->
 
   <build>
-    <nagEmailAddress>struts-dev@jakarta.apache.org</nagEmailAddress>
+    <nagEmailAddress>struts-dev@struts.apache.org</nagEmailAddress>
     <sourceDirectory>src/java</sourceDirectory>
-    
-    <!-- Unit test cases -->
     <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
-    <integrationUnitTestSourceDirectory />
-    <aspectSourceDirectory />
+    
     <unitTest>
       <includes>
-        <include>**/Test*</include>
+        <include>**/Test*.java</include>
       </includes>
       <resources>
         <resource>
@@ -395,8 +385,10 @@
         </resource>
       </resources>
     </unitTest>
+
     <!-- J A R  R E S O U R C E S -->
     <!-- Resources that are packaged up inside the JAR file -->
+<!--
     <resources>
       <resource>
         <directory>${basedir}/src/share</directory>
@@ -405,6 +397,8 @@
         </includes>
       </resource>
     </resources>
+-->
+
   </build>
 
   <reports>
