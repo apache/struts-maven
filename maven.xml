@@ -26,7 +26,7 @@
        ignoreFailures="false"/>
   </goal>
 
-  <postGoal name="jar:jar">
+  <postGoal name="dist">
 	<attainGoal name="jar:install"/>
   </postGoal>
 
