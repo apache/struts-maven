@@ -9,12 +9,6 @@
   <goal name="build-all">
   
 	<maven:maven
-	  descriptor="../mock/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
 	  descriptor="../core/project.xml"
 	  goals="dist"
 	  ignoreFailures="false"
@@ -53,18 +47,69 @@
   </goal>
     
   <goal name="clean-all">
-    <maven:reactor  
-              basedir="./"
-             includes="../*/project.xml"
-             excludes="build/project.xml"
-                goals="clean"
-               banner="Cleaning Struts distribution"
-       ignoreFailures="false"/>
+	<maven:maven
+	  descriptor="../core/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../taglib/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../tiles/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../apps/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../el/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../bsf/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
   </goal>
 
   <postGoal name="dist">
 	<attainGoal name="jar:install"/>
   </postGoal>
+  
+  <goal name="struts:gather:distribution">
+	  <tstamp>
+	    <format property="now" pattern="yyyy-MM-dd"/>
+	  </tstamp>
+	  
+	  <j:set var="file"  value="target/${pom.artifactId}-${pom.currentVersion}.jar"/>	  
+	  <j:set var="build" value="../build"/>
+	  <j:set var="dir"   value="${build}/${now}/${pom.artifactId}-${pom.currentVersion}"/>
+	  <j:set var="docs"  value="target/docs/"/>
+	  
+	  <ant:mkdir dir="${dir}"/>
+	  <ant:copy file="${file}" 
+	  	todir="${dir}"/>
+	  
+	  <ant:mkdir dir="${build}/latest-docs/${pom.artifactId}-${pom.currentVersion}"/>
+	  <copy todir="${build}/latest-docs/${pom.artifactId}-${pom.currentVersion}">
+		<fileset dir="target/docs"/>
+	  </copy>
+  
+  </goal>
+  
 
   <postGoal name="dist:prepare-bin-filesystem">
     <!-- Copy Instructions and Readmes -->
