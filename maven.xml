@@ -4,7 +4,8 @@
             xmlns:j="jelly:core"
             xmlns:ant="jelly:ant"
             xmlns:maven="jelly:maven">
-            
+  
+  <!-- this goal should be called from current/build -->
   <goal name="build-all">
     <maven:reactor 
               basedir="${root.path}"
@@ -15,7 +16,7 @@
        ignoreFailures="false"/>
   </goal>
     
-  <postGoal name="clean">
+  <goal name="clean-all">
     <maven:reactor  
               basedir="${root.path}"
              includes="../*/project.xml"
@@ -23,7 +24,7 @@
                 goals="clean"
                banner="Cleaning Struts distribution"
        ignoreFailures="false"/>
-  </postGoal>
+  </goal>
 
 
   <postGoal name="dist:prepare-bin-filesystem">
