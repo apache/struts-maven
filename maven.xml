@@ -44,6 +44,12 @@
 	  ignoreFailures="false"
 	/>
 	
+	<maven:maven
+	  descriptor="../flow/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
   </goal>
     
   <goal name="clean-all">
@@ -79,6 +85,12 @@
 	
 	<maven:maven
 	  descriptor="../bsf/project.xml"
+	  goals="clean"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../flow/project.xml"
 	  goals="clean"
 	  ignoreFailures="false"
 	/>
