@@ -4,228 +4,79 @@
             xmlns:j="jelly:core"
             xmlns:ant="jelly:ant"
             xmlns:maven="jelly:maven">
-  
-  <!-- this goal should be called from current/build -->
-  <goal name="build-all">
-  
-	<maven:maven
-	  descriptor="../core/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../taglib/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../tiles/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../apps/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../el/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../bsf/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../flow/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../faces/project.xml"
-	  goals="dist"
-	  ignoreFailures="false"
-	/>
-	
-  </goal>
-    
-  <goal name="clean-all">
-	<maven:maven
-	  descriptor="../core/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../taglib/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../tiles/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../apps/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../el/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../bsf/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../flow/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-	<maven:maven
-	  descriptor="../faces/project.xml"
-	  goals="clean"
-	  ignoreFailures="false"
-	/>
-	
-  </goal>
 
-  <postGoal name="dist">
-	<attainGoal name="jar:install"/>
-  </postGoal>
-  
-  
-<goal name="struts:gather:all:distributions">
+	<tstamp>
+		<format property="today" pattern="yyyy-MM-dd"/>
+	</tstamp>
 
-  	<maven:maven
-  	  descriptor="../core/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-  	<maven:maven
-  	  descriptor="../taglib/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-  	<maven:maven
-  	  descriptor="../tiles/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-  	<maven:maven
-  	  descriptor="../el/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-  	<maven:maven
-  	  descriptor="../bsf/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-  	<maven:maven
-  	  descriptor="../flow/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-  	<maven:maven
-  	  descriptor="../faces/project.xml"
-  	  goals="struts:gather:distribution"
-  	  ignoreFailures="false"
-  	/>
-  	
-	  <tstamp>
-	    <format property="now" pattern="yyyy-MM-dd"/>
-	  </tstamp>
-	  
-	  <j:set var="distributions"  value="target/distributions"/>	  
-	  <j:set var="build" value="../build"/>
-	  <j:set var="dir"   value="${build}/${now}"/>
-	  
-	  <ant:copy todir="${dir}">
+	<goal name="nightly">
+	  <attainGoal name="clean-all"/>
+	  <attainGoal name="build-all"/>
+
+	  <ant:copy todir="${today}">
 		<ant:fileset dir="../apps/blank/target/">
 	        <ant:include name="struts-blank.war"/>
 		</ant:fileset>
 	  </ant:copy>
 
-	  <ant:copy todir="${dir}">
+	  <ant:copy todir="${today}">
 		<ant:fileset dir="../apps/shared/target/">
 	        <ant:include name="struts-mailreader.war"/>
 		</ant:fileset>
 	  </ant:copy>
 
-	  <ant:copy todir="${dir}">
+	  <ant:copy todir="${today}">
 		<ant:fileset dir="../apps/examples/target/">
 	        <ant:include name="struts-examples.war"/>
 		</ant:fileset>
 	  </ant:copy>
 
-  </goal>
+	</goal>
 
-  
-  
-  
-  <goal name="struts:gather:distribution">
-	  <tstamp>
-	    <format property="now" pattern="yyyy-MM-dd"/>
-	  </tstamp>
-	  
-	  <j:set var="distributions"  value="target/distributions"/>	  
-	  <j:set var="build" value="../build"/>
-	  <j:set var="dir"   value="${build}/${now}/${pom.artifactId}-${pom.currentVersion}"/>
-	  
-	  <ant:mkdir dir="${dir}"/>
-	  <ant:copy todir="${dir}">
-	  	<fileset dir="${distributions}"/>
-	  </ant:copy>
-  </goal>
-	  
-	  
-  <goal name="struts:gather:docs">
-	  <j:set var="build" value="../build"/>
-	  <ant:mkdir dir="${build}/latest-docs/${pom.artifactId}-${pom.currentVersion}"/>
-	  <copy todir="${build}/latest-docs/${pom.artifactId}-${pom.currentVersion}">
-		<fileset dir="target/docs"/>
-	  </copy>
-  
-  </goal>
-  
 
-  <postGoal name="dist:prepare-bin-filesystem">
-    <!-- Copy Instructions and Readmes -->
-    <ant:copy todir="${maven.dist.bin.assembly.dir}">
-      <ant:fileset dir="build/">
-        <ant:include name="README*"/>
-        <ant:include name="LICENSE*"/>
-        <ant:include name="STATUS*"/>
-        <ant:include name="INSTALL*"/>
-      </ant:fileset>
-    </ant:copy>
-  </postGoal>
+	<goal name="build-all">
+		  	<maven:reactor
+			      basedir="../"
+			      includes="*/project.xml"
+			      excludes="build/project.xml"
+			      goals="dist"
+			      banner="Building nightlies"
+		      ignoreFailures="true"/>
+
+	</goal>
+
+
+	<goal name="clean-all">
+
+		  	<maven:reactor
+			      basedir="../"
+			      includes="*/project.xml"
+			      excludes="build/project.xml"
+			      goals="clean"
+			      banner="Building nightlies"
+		      ignoreFailures="true"/>
+		  	
+	</goal>
+
+
+	<postGoal name="dist:prepare-bin-filesystem">
+		<!-- Copy Instructions and Readmes -->
+		<ant:copy todir="${maven.dist.bin.assembly.dir}">
+		  <ant:fileset dir="build/">
+			<ant:include name="README*"/>
+			<ant:include name="LICENSE*"/>
+			<ant:include name="STATUS*"/>
+			<ant:include name="INSTALL*"/>
+		  </ant:fileset>
+		</ant:copy>
+		
+		<ant:copy todir="../build/${today}/${pom.artifactId}-${pom.currentVersion}">
+		  <ant:fileset dir="${maven.build.dir}/distributions">
+			<ant:include name="*"/>
+		  </ant:fileset>
+		</ant:copy>
+
+	</postGoal>
 
   <postGoal name="dist:prepare-src-filesystem">
     <!-- Copy Instructions and Readmes -->
