@@ -8,7 +8,7 @@
   <!-- this goal should be called from current/build -->
   <goal name="build-all">
     <maven:reactor 
-              basedir="${root.path}"
+              basedir="./"
              includes="../*/project.xml"
              excludes="build/project.xml"
                 goals="dist"
@@ -18,7 +18,7 @@
     
   <goal name="clean-all">
     <maven:reactor  
-              basedir="${root.path}"
+              basedir="./"
              includes="../*/project.xml"
              excludes="build/project.xml"
                 goals="clean"
