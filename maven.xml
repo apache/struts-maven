@@ -106,15 +106,19 @@
 	    <format property="now" pattern="yyyy-MM-dd"/>
 	  </tstamp>
 	  
-	  <j:set var="file"  value="target/${pom.artifactId}-${pom.currentVersion}.jar"/>	  
+	  <j:set var="distributions"  value="target/distributions"/>	  
 	  <j:set var="build" value="../build"/>
 	  <j:set var="dir"   value="${build}/${now}/${pom.artifactId}-${pom.currentVersion}"/>
-	  <j:set var="docs"  value="target/docs/"/>
 	  
 	  <ant:mkdir dir="${dir}"/>
-	  <ant:copy file="${file}" 
-	  	todir="${dir}"/>
+	  <ant:copy todir="${dir}">
+	  	<fileset dir="${distributions}"/>
+	  </ant:copy>
+  </goal>
 	  
+	  
+  <goal name="struts:gather:docs">
+	  <j:set var="build" value="../build"/>
 	  <ant:mkdir dir="${build}/latest-docs/${pom.artifactId}-${pom.currentVersion}"/>
 	  <copy todir="${build}/latest-docs/${pom.artifactId}-${pom.currentVersion}">
 		<fileset dir="target/docs"/>
