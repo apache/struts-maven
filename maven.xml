@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<project    default="build-all"
+            xmlns:j="jelly:core"
+            xmlns:ant="jelly:ant"
+            xmlns:maven="jelly:maven">
+            
+  <goal name="build-all">
+    <maven:reactor 
+              basedir="${root.path}"
+             includes="../*/project.xml"
+             excludes="build/project.xml"
+                goals="dist"
+               banner="Building Struts distribution"
+       ignoreFailures="false"/>
+  </goal>
+    
+  <postGoal name="clean">
+    <maven:reactor  
+              basedir="${root.path}"
+             includes="../*/project.xml"
+             excludes="build/project.xml"
+                goals="clean"
+               banner="Cleaning Struts distribution"
+       ignoreFailures="false"/>
+  </postGoal>
+
+
+  <postGoal name="dist:prepare-bin-filesystem">
+    <!-- Copy Instructions and Readmes -->
+    <ant:copy todir="${maven.dist.bin.assembly.dir}">
+      <ant:fileset dir=".">
+        <ant:include name="README*"/>
+        <ant:include name="LICENSE*"/>
+        <ant:include name="STATUS*"/>
+        <ant:include name="INSTALL*"/>
+      </ant:fileset>
+    </ant:copy>
+
+    <!-- Copy configuration files -->
+    <j:set var="docsDest" value="${maven.docs.dest}"/>
+    <ant:copy todir="${maven.dist.bin.assembly.dir}/conf">
+      <ant:fileset dir="./conf/share">
+        <ant:include name="*.xml"/>
+        <ant:include name="*.dtd"/>
+      </ant:fileset>
+    </ant:copy>
+  </postGoal>
+
+
+  <postGoal name="dist:prepare-src-filesystem">
+    <!-- Copy Instructions and Readmes -->
+    <ant:copy todir="${maven.dist.src.assembly.dir}">
+      <ant:fileset dir=".">
+        <ant:include name="README*"/>
+        <ant:include name="LICENSE*"/>
+        <ant:include name="STATUS*"/>
+        <ant:include name="INSTALL*"/>
+      </ant:fileset>
+    </ant:copy>
+
+    <!-- Copy configuration files -->
+    <j:set var="docsDest" value="${maven.docs.dest}"/>
+    <ant:copy todir="${maven.dist.src.assembly.dir}/conf">
+      <ant:fileset dir="./conf/share">
+        <ant:include name="*.xml"/>
+        <ant:include name="*.dtd"/>
+      </ant:fileset>
+    </ant:copy>
+  </postGoal>
+
+</project>
