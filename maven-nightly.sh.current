@@ -1,20 +1,34 @@
 #!/bin/sh
 # 
 # This bash shell script executes the necessary commands to 
-# build a nightly distribution and publish it to the Apache hardware.
-# 
+# build and publish a nightly distribution of Struts to Apache:
+#
+#  http://svn.apache.org/builds/struts/maven/nightly/
+#
+#
 
-TODAY=`date +%Y%m%d`
+cd ~/svn/struts/current/build/
+
+mkdir nightly
+mkdir nightly/logs
+mkdir nightly/struts-apps
+mkdir nightly/struts-bsf
+mkdir nightly/struts-core
+mkdir nightly/struts-el
+mkdir nightly/struts-faces
+mkdir nightly/struts-flow
+mkdir nightly/struts-sandbox
+mkdir nightly/struts-taglib
+mkdir nightly/struts-tiles
 
 cd ../
-svn up > build/nightly/logs/svn-update-$TODAY.log
-cd build
-maven nightly > nightly/logs/maven-build-$TODAY.log
+svn up
 
-scp -r nightly cvs.apache.org:/www/cvs.apache.org/builds/struts/maven/
+cd build/
+maven nightly
+
+scp -r nightly svn.apache.org:/www/cvs.apache.org/builds/struts/maven/
 
 ssh cvs.apache.org find /www/cvs.apache.org/builds/struts/maven/nightly -mtime +7 -exec rm -fr {} \;
-
-
 
 
