@@ -7,13 +7,49 @@
   
   <!-- this goal should be called from current/build -->
   <goal name="build-all">
-    <maven:reactor 
-              basedir="./"
-             includes="../*/project.xml"
-             excludes="build/project.xml"
-                goals="dist"
-               banner="Building Struts distribution"
-       ignoreFailures="false"/>
+  
+	<maven:maven
+	  descriptor="../mock/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../core/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../taglib/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../tiles/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../apps/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../el/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
+	<maven:maven
+	  descriptor="../bsf/project.xml"
+	  goals="dist"
+	  ignoreFailures="false"
+	/>
+	
   </goal>
     
   <goal name="clean-all">
