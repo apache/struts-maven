@@ -26,6 +26,9 @@
        ignoreFailures="false"/>
   </goal>
 
+  <postGoal name="jar:jar">
+	<attainGoal name="jar:install"/>
+  </postGoal>
 
   <postGoal name="dist:prepare-bin-filesystem">
     <!-- Copy Instructions and Readmes -->
