@@ -325,7 +325,7 @@
       <groupId>antlr</groupId>
       <artifactId>antlr</artifactId>
       <version>2.7.2</version>
-      <url>http://www.antlr.org/download.html</url>
+      <url>http://www.antlr.org/</url>
       <properties>
         <war.bundle>true</war.bundle>
       </properties>
@@ -412,6 +412,7 @@
     <report>maven-jdepend-plugin</report>
     <report>maven-junit-report-plugin</report>
     <report>maven-jxr-plugin</report>
+	<report>maven-linkcheck-plugin</report>
     <report>maven-pmd-plugin</report>
     <report>maven-simian-plugin</report>
     <report>maven-tasklist-plugin</report>
