@@ -395,6 +395,7 @@
           <directory>${basedir}/src/test</directory>
           <includes>
             <include>**/*.xml</include>
+            <include>**/*.properties</include>
           </includes>
         </resource>
       </resources>
@@ -443,5 +444,7 @@
     <report>maven-pmd-plugin</report>
     <report>maven-simian-plugin</report>
     <report>maven-tasklist-plugin</report>
+    <report>maven-jcoverage-plugin</report>
+
   </reports>
 </project>
