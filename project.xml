@@ -445,7 +445,7 @@
     <report>maven-simian-plugin</report>
     <report>maven-tasklist-plugin</report>
     <report>maven-jcoverage-plugin</report>
-	<report>maven-findbugs-plugin</report>
+    <!--report>maven-findbugs-plugin</report-->
 
   </reports>
 </project>
