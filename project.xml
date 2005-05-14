@@ -426,11 +426,9 @@
      | Each report plugin with it's POM and plugin.jelly logic should
      | contain everything needed to produced the report.
      |
-     
-     // TODO fix the check style plugin reference to the License file
-    <report>maven-checkstyle-plugin</report>
     -->
 
+    <report>maven-checkstyle-plugin</report>
     <report>maven-changelog-plugin</report>
     <report>maven-changes-plugin</report>
     <report>maven-developer-activity-plugin</report>
