@@ -32,8 +32,14 @@
 	        <ant:include name="struts-examples.war"/>
 		</ant:fileset>
 	  </ant:copy>
-	  
-	</goal>
+
+      <ant:copy tofile="nightly/struts-el/strutsel-exercise-taglib-${today}.war">
+        <ant:fileset dir="../el/target/">
+            <ant:include name="strutsel-exercise-taglib.war"/>
+        </ant:fileset>
+      </ant:copy>
+
+    </goal>
 
 
 	<goal name="build-all">
