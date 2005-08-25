@@ -84,9 +84,10 @@
 		<ant:copy todir="${maven.dist.bin.assembly.dir}">
 		  <ant:fileset dir="build/">
 			<ant:include name="README*"/>
-			<ant:include name="LICENSE*"/>
+			<ant:include name="LICENSE.txt"/>
 			<ant:include name="STATUS*"/>
 			<ant:include name="INSTALL*"/>
+			<ant:include name="NOTICE*"/>
 		  </ant:fileset>
 		</ant:copy>
 		
@@ -98,9 +99,10 @@
 		<ant:copy todir="${maven.dist.src.assembly.dir}">
 		  <ant:fileset dir="build">
 			<ant:include name="README*"/>
-			<ant:include name="LICENSE*"/>
+			<ant:include name="LICENSE.txt"/>
 			<ant:include name="STATUS*"/>
 			<ant:include name="INSTALL*"/>
+			<ant:include name="NOTICE*"/>
 		  </ant:fileset>
 		</ant:copy>
 
