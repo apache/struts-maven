@@ -123,6 +123,12 @@
       <archive>http://mail-archives.apache.org/eyebrowse/SummarizeList?listId=41</archive>
     </mailingList>
   </mailingLists>
+  
+  <repository>
+    <connection>scm|svn|http://svn.apache.org/repos/asf/struts/current</connection>
+    <developerConnection>scm|svn|https://svn.apache.org/repos/asf/struts/current</developerConnection>
+    <url>http://svn.apache.org/repos/asf/struts/site/trunk</url>
+  </repository>  
 
   <developers>
     <developer>
