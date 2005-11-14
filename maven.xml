@@ -17,9 +17,9 @@
           <ant:mkdir dir="nightly/struts-bsf/"/>
           <ant:mkdir dir="nightly/struts-core/"/>
           <ant:mkdir dir="nightly/struts-el/"/>
+          <ant:mkdir dir="nightly/struts-extras/"/>
           <ant:mkdir dir="nightly/struts-faces/"/>
           <ant:mkdir dir="nightly/struts-flow/"/>
-          <ant:mkdir dir="nightly/struts-plugins/"/>
           <ant:mkdir dir="nightly/struts-sandbox/"/>
           <ant:mkdir dir="nightly/struts-site/"/>
           <ant:mkdir dir="nightly/struts-taglib/"/>
