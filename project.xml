@@ -77,27 +77,19 @@
   <gumpRepositoryId>struts-svn</gumpRepositoryId>
 
   <description>
-      The core of the Struts framework is a flexible control layer based on 
-      standard technologies like Java Servlets, JavaBeans, ResourceBundles, 
-      and Extensible Markup Language (XML), as well as various Jakarta Commons 
-      packages. 
+        The goal of the Apache Struts project is to encourage application
+        architectures based on the "Model 2" approach, a variation of the
+        classic Model-View-Controller (MVC) design paradigm.
+        Under Model 2,
+        a servlet (or equivalent) manages business logic execution,
+        and presentation logic resides mainly in server pages.
       
-      Struts encourages application architectures based on the Model 
-      2 approach, a variation of the classic Model-View-Controller (MVC) design 
-      paradigm. Struts provides its own Controller component and integrates with 
-      other technologies to provide the Model and the View. 
-      
-      For the Model, Struts can interact with any standard data access technology, 
-      including Enterprise Java Beans, JDBC, and Object Relational Bridge. 
-      
-      For the View, Struts works well with JavaServer Pages, including JSTL and 
-      JSF, as well as Velocity Templates, XSLT, and other presentation systems. 
-      
-      The Struts framework provides the invisible underpinnings every professional 
-      web application needs to survive. Struts helps you create an extensible 
-      development environment for your application, based on published standards 
-      and proven design patterns.
-      
+        The Apache Struts project encourages Model 2 designs in two ways.
+        First, by providing open source frameworks and toolkits
+        that help developers build applications for the web.
+        Second, by providing friendly and honest mailing lists
+        where both newcomers and veterans discuss how to use Struts software
+        in their own Model 2 applications.
   </description>
       
   <shortDescription>MVC Web Application Framework</shortDescription>
