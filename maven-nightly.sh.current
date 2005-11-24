@@ -29,7 +29,7 @@ mkdir nightly
 mkdir nightly/logs
 mkdir nightly/struts-apps
 mkdir nightly/struts-bsf
-mkdir nightly/struts-core
+mkdir nightly/struts-action
 mkdir nightly/struts-el
 mkdir nightly/struts-faces
 mkdir nightly/struts-flow
