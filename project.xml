@@ -263,6 +263,11 @@
       <organization></organization>
     </developer>
 
+    <developer>
+      <name>Richard Feit</name>
+      <id>rich</id>
+      <email>rich at apache.org</email>
+    </developer>
   </developers>
 
   <contributors/>
