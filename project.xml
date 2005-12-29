@@ -257,6 +257,24 @@
     </developer>
     
     <developer>
+       <name>Gary VanMatre</name>
+       <id>gvanmatre</id>
+       <email>gvanmatre at apache.org</email>
+    </developer>
+
+    <developer>
+      <name>Sean Schofield</name>
+      <id>schof</id>
+      <email>schof at apache.org</email>
+    </developer>
+ 
+    <developer>
+      <name>Greg Reddin</name>
+      <id>greddin</id>
+      <email>greddin at apache.org</email>
+    </developer>
+
+    <developer>
       <name>Laurie Harper</name>
       <id>laurieh</id>
       <email>laurieh at apache.org</email>
