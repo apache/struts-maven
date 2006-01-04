@@ -35,9 +35,15 @@
 	        <ant:include name="struts-blank.war"/>
 		</ant:fileset>
 	  </ant:copy>
+
+	  <ant:copy tofile="nightly/struts-apps/struts-cookbook-${today}.war">
+		<ant:fileset dir="../apps/cookbook/target/">
+	        <ant:include name="struts-cookbook.war"/>
+		</ant:fileset>
+	  </ant:copy>
 	  
 	  <ant:copy tofile="nightly/struts-apps/struts-mailreader-${today}.war">
-		<ant:fileset dir="../apps/shared/target/">
+		<ant:fileset dir="../apps/mailreader/target/">
 	        <ant:include name="struts-mailreader.war"/>
 		</ant:fileset>
 	  </ant:copy>
