@@ -289,6 +289,19 @@
             <id>rich</id>
             <email>rich at apache.org</email>
         </developer>
+
+        <developer>
+            <name>Jason Carreira</name>
+            <id>jcarreira</id>
+            <email>jcarreira at apache.org</email>
+        </developer>
+
+        <developer>
+            <name>Patrick Lightbody</name>
+            <id>plightbo</id>
+            <email>plightbo at apache.org</email>
+        </developer>
+        
     </developers>
 
     <contributors/>
