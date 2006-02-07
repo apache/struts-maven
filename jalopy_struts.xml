@@ -191,6 +191,13 @@
             <paramsMethodCallIfCall>false</paramsMethodCallIfCall>
             <afterLabel>true</afterLabel>
             <use>true</use>
+            <!-- Begin Custom for Struts -->
+            <ondemand>
+                <after>
+                    <assignment>true</assignment>
+                </after>
+            </ondemand>
+            <!-- End Custom for Struts -->
         </wrapping>
         <braces>
             <removeBracesBlock>true</removeBracesBlock>
