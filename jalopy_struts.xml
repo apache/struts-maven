@@ -125,6 +125,7 @@
             <braceLeft>1</braceLeft>
             <deep>30</deep>
             <braceRight>0</braceRight>
+            <braceRightAfter>1</braceRightAfter>
             <useMethodCallParams>false</useMethodCallParams>
             <continuation>4</continuation>
             <braceCuddled>1</braceCuddled>
@@ -210,7 +211,7 @@
             <insertBracesFor>true</insertBracesFor>
             <removeBracesIfElse>false</removeBracesIfElse>
             <removeBracesWhile>false</removeBracesWhile>
-            <rightBraceNewLine>true</rightBraceNewLine>
+            <rightBraceNewLine>false</rightBraceNewLine>
             <leftBraceNewLine>false</leftBraceNewLine>
             <emptyCuddle>false</emptyCuddle>
             <insertBracesDoWhile>true</insertBracesDoWhile>
@@ -238,8 +239,8 @@
         </misc>
     </transform>
     <general>
-        <styleName>Sun</styleName>
-        <styleDescription>Sun Java Coding Convention</styleDescription>
+        <styleName>Struts</styleName>
+        <styleDescription>Apache Struts Coding Convention</styleDescription>
         <backupLevel>0</backupLevel>
         <backupDirectory>bak</backupDirectory>
         <threadCount>1</threadCount>
