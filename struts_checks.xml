@@ -45,12 +45,8 @@
     - Increase LineLength max to 120 since Jalopy is set to format lines at 
       column 80. Some lines are difficult to both indent and wrap at 80. 
       
-    - Disable LeftCurly and RightCurly modules to avoid conflicts with Jalopy. 
-
-    - Disable NoWhitespaceAfter module to avoid conflicts wit Jalopy. 
-    
-    - Disable WhitespaceAround module to avoid conflicts with Jalopy. 
-    
+    - Omit "ARRAY_INIT" from NoWhitespaceAfter to avoid conflict with Jalopy.
+        
 -->
 <!--
 
@@ -165,14 +161,19 @@
         <!-- Checks for whitespace                               -->
         <!-- See http://checkstyle.sf.net/config_whitespace.html -->
         <module name="EmptyForIteratorPad"/>
-        <!-- Disabled for Struts: module name="NoWhitespaceAfter"/ -->
+        <!-- Struts Custom begins (omit ARRAY_INIT) -->
+        <module name="NoWhitespaceAfter">
+        	<property name="tokens" 
+        	value="BNOT, DEC, DOT, INC, LNOT, UNARY_MINUS, UNARY_PLUS"/>
+        </module>
+        <!-- Struts Custom ends -->
         <module name="NoWhitespaceBefore"/>
         <module name="OperatorWrap"/>
         <module name="ParenPad"/>
         <module name="TypecastParenPad"/>
         <module name="TabCharacter"/>
         <module name="WhitespaceAfter"/>
-        <!-- Disabled for Struts: module name="WhitespaceAround"/ -->
+        <module name="WhitespaceAround"/>
 
 
         <!-- Modifier Checks                                    -->
@@ -185,9 +186,9 @@
         <!-- See http://checkstyle.sf.net/config_blocks.html -->
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock"/>
-        <!-- Disabled for Struts: module name="LeftCurly"/ -->
+        <module name="LeftCurly"/>
         <module name="NeedBraces"/>
-        <!-- Disabled for Struts: module name="RightCurly"/ -->
+        <module name="RightCurly"/>
 
 
         <!-- Checks for common coding problems               -->
