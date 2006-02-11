@@ -499,7 +499,6 @@
         <report>maven-changelog-plugin</report>
         <report>maven-changes-plugin</report>
         <report>maven-developer-activity-plugin</report>
-        <report>maven-faq-plugin</report>
         <report>maven-file-activity-plugin</report>
         <report>maven-javadoc-plugin</report>
         <report>maven-jdepend-plugin</report>

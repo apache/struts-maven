@@ -9,6 +9,10 @@
         <format property="today" pattern="yyyyMMdd"/>
     </tstamp>
 
+    <preGoal name="xdoc:jelly-transform">
+      <attainGoal name="faq"/>
+    </preGoal>
+
     <goal name="nightly">
         <ant:delete dir="nightly"/>
         <ant:mkdir dir="nightly/"/>

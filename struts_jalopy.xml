@@ -16,6 +16,10 @@
  * limitations under the License.
  */
  -->
+<!-- 
+     WARNING: Do not use automatic reformatting on this file! 
+     Some values are comma delimited lists that cannot be wrapped. 
+-->
 <jalopy>
     <printer>
         <alignment>
