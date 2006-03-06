@@ -33,6 +33,9 @@ Other Active Committers
     * Sean Schofield (schof at apache.org)
     * Greg Reddin (greddin at apache.org)
     * Laurie Harper (laurieh at apache.org)
+    * Richard Feit  (rich at apache.org)
+    * Jason Carreira (jcarreira at apache.org)
+    * Patrick Lightbody (plightbo at apache.org)
 
 
 Emeritus Committers 
