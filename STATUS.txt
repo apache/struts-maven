@@ -33,9 +33,6 @@ Other Active Committers
     * Sean Schofield (schof at apache.org)
     * Greg Reddin (greddin at apache.org)
     * Laurie Harper (laurieh at apache.org)
-    * Richard Feit  (rich at apache.org)
-    * Jason Carreira (jcarreira at apache.org)
-    * Patrick Lightbody (plightbo at apache.org)
 
 
 Emeritus Committers 
@@ -50,6 +47,34 @@ Emeritus Committers
     * Arron Bates
     * Steve Raeburn
     * James Turner
+
+----
+
+2006 Board Reports 
+
+
+January 2006
+
+The last quarter has been an eventful one in the Struts community. In
+terms of releases, we released Struts 1.2.8, primarily to fix an XSS
+vulnerability; Struts Scripting 1.0.1 is the first GA release of this
+component; and Struts Shale 1.0.0 is the first Alpha release of our newest
+framework.
+
+In the wake of the web framework "unification" discussions mentioned in
+our last board report, the Struts team and the WebWork team have agreed to
+join forces. There have been numerous interactions between the teams, and
+the team members, for some time now, and we are confident that the merger
+will work well. The plan is for WebWork to come to the ASF, and for it to
+provide the underpinnings for a Struts Action Framework 2.0. We anticipate
+that the IP clearance process will begin shortly, now that WebWork 2.2 has
+been released.
+
+On the people front, we added Wendy Smoak as a PMC member, and Rich Feit,
+Patrick Lightbody and Jason Carreira have joined us as committers. Also, a
+record seven Struts committers managed to be in the same place at the same
+time at ApacheCon in December, leading to some very fruitful discussions.
+
 
 ----
 
