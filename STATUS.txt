@@ -23,17 +23,19 @@ PMC Members
     * Niall Pemberton (niallp at apache.org)
     * Hubert Rabago (hrabago at apache.org)
     * Wendy Smoak (wsmoak at apache.org)
+    * Gary VanMatre (gvanmatre at apache.org)
 
 Other Active Committers
 
     * Eddie Bush  (ekbush at apache.org)
     * James Turner (turner at blackbear.com)
     * David Geary (dgeary at apache.org)
-    * Gary VanMatre (gvanmatre at apache.org)
     * Sean Schofield (schof at apache.org)
     * Greg Reddin (greddin at apache.org)
     * Laurie Harper (laurieh at apache.org)
-
+    * Richard Feit  (rich at apache.org)
+    * Jason Carreira (jcarreira at apache.org)
+    * Patrick Lightbody (plightbo at apache.org) 
 
 Emeritus Committers 
 
@@ -173,16 +175,29 @@ JSF-based framework, being proposed as an alternative to Struts 1.x.
 
 ----
 
+2006 PROJECT VOTES 
+
+Nominate Gary VanMatre as a PMC member 
+* [27 Feb 2006] Tally 10 +1
+
+Confirm the Struts Action Library 1.3.0 release plan  
+* [11 Feb 2006] Tally 7 +1 (binding); 3 +1 (non-binding)
+
+Accept WebWork 2 Merger Incubator Proposal  
+* [24 Jan 2006] Tally: 10 +1 (binding); 4 +1 (non-binding)
+
+----
+
 2005 PROJECT VOTES
 
 Struts Scripting 1.0.1 Quality
-* [17 Dec 2005 DEV] Tally: 1 +1 Alpha.
+* [17 Dec 2005 DEV] Tally: 3 +1 GA.
 
 Confirm the Struts Scripting 1.0.1 release plan
 * [7 Dec 2005] Tally: 4 +1
 
 Invite Richard Feit as a Struts Committer
-* [14 Dec 2005 DEV] Tally:
+* [14 Dec 2005 DEV] Tally:7 +1 (binding); 3 +1 (non-binding)
 
 Nominate Wendy Smoak as a PMC member
 * [14 Dec 2005] Tally: 7 +1
