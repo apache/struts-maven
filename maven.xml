@@ -137,6 +137,8 @@
                 <ant:include name="project.*"/>
                 <ant:include name="*.xml"/>
                 <ant:include name="*.jsl"/>
+                <ant:include name="LICENSE*"/>
+                <ant:include name="NOTICE*"/>
             </ant:fileset>
         </ant:copy>
     </postGoal>
