@@ -51,6 +51,13 @@ For more information, see:  http://wiki.apache.org/struts/StrutsMaven2Plan
     </issueManagement>
 
     <ciManagement/>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>apache-snapshot</id>
+           <name>Apache Snapshot Repository</name>
+           <url>scp://people.apache.org/www/cvs.apache.org/maven-snapshot-repository</url>
+       </snapshotRepository>
+    </distributionManagement>
 
     <mailingLists>
         <mailingList>
