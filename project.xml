@@ -55,7 +55,7 @@
     <pomVersion>3</pomVersion>
     <artifactId>struts-build</artifactId>
     <name>Struts common build</name>
-    <groupId>struts</groupId>
+    <groupId>org.apache.struts.action</groupId>
     <currentVersion>1.3.2-SNAPSHOT</currentVersion>
 
 
