@@ -18,16 +18,10 @@
         <ant:mkdir dir="nightly/"/>
         <ant:mkdir dir="nightly/logs/"/>
         <ant:mkdir dir="nightly/struts-apps/"/>
-        <ant:mkdir dir="nightly/struts-action/"/>
+        <ant:mkdir dir="nightly/struts-core/"/>
         <ant:mkdir dir="nightly/struts-el/"/>
         <ant:mkdir dir="nightly/struts-extras/"/>
-        <ant:mkdir dir="nightly/struts-faces/"/>
-        <ant:mkdir dir="nightly/struts-flow/"/>
-        <ant:mkdir dir="nightly/struts-sandbox/"/>
-        <ant:mkdir dir="nightly/struts-scripting/"/>
-        <ant:mkdir dir="nightly/struts-site/"/>
         <ant:mkdir dir="nightly/struts-taglib/"/>
-        <ant:mkdir dir="nightly/struts-tiles/"/>
 
         <attainGoal name="clean-all"/>
         <attainGoal name="build-all"/>
@@ -73,7 +67,7 @@
         <maven:reactor
                 basedir="../"
                 includes="*/project.xml"
-                excludes="build/project.xml"
+                excludes="../build/project.xml"
                 goals="dist"
                 banner="Building nightlies"
                 ignoreFailures="true"/>
@@ -81,7 +75,7 @@
         <maven:reactor
                 basedir="../"
                 includes="*/project.xml"
-                excludes="build/project.xml"
+                excludes="../build/project.xml"
                 goals="copy-distribution"
                 banner="Building nightlies"
                 ignoreFailures="true"/>
@@ -93,7 +87,7 @@
         <maven:reactor
                 basedir="../"
                 includes="*/project.xml"
-                excludes="build/project.xml"
+                excludes="../build/project.xml"
                 goals="clean"
                 banner="Building nightlies"
                 ignoreFailures="true"/>
@@ -107,7 +101,7 @@
     <postGoal name="dist:prepare-bin-filesystem">
         <!-- Copy Instructions and Readmes -->
         <ant:copy todir="${maven.dist.bin.assembly.dir}">
-            <ant:fileset dir="build/">
+            <ant:fileset dir="../build/">
                 <ant:include name="README*"/>
                 <ant:include name="LICENSE.txt"/>
                 <ant:include name="STATUS*"/>
@@ -122,7 +116,7 @@
 
         <!-- Copy Instructions and Readmes -->
         <ant:copy todir="${maven.dist.src.assembly.dir}">
-            <ant:fileset dir="build">
+            <ant:fileset dir="../build">
                 <ant:include name="README*"/>
                 <ant:include name="LICENSE.txt"/>
                 <ant:include name="STATUS*"/>
@@ -133,7 +127,7 @@
 
         <!-- Copy Maven Control files -->
         <ant:copy todir="${maven.dist.src.assembly.dir}/build">
-            <ant:fileset dir="build">
+            <ant:fileset dir="../build">
                 <ant:include name="project.*"/>
                 <ant:include name="*.xml"/>
                 <ant:include name="*.jsl"/>
@@ -148,7 +142,7 @@
         <maven:reactor
                 basedir="../"
                 includes="*/project.xml"
-                excludes="build/project.xml"
+                excludes="../build/project.xml"
                 goals="copy-distribution"
                 banner="Copy nightly artifacts"
                 ignoreFailures="false"/>

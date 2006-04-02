@@ -273,7 +273,6 @@ For more information, see:  http://wiki.apache.org/struts/StrutsMaven2Plan
         <module>../el</module>
         <module>../extras</module>
         <module>../taglib</module>
-        <module>../tiles</module>
         <!--module>../apps</module-->
     </modules>
 
