@@ -34,8 +34,10 @@
    <artifactId>struts-build</artifactId>
    <version>1.0.0</version>
    <packaging>jar</packaging>
-   <name>Struts Action - Build</name>
+   <name>Apache Struts - Build</name>
    <url>http://struts.apache.org</url>
+   
+   <description>Apache Struts - Build</description>
 
    <scm>
       <connection>svm:svn:http://svn.apache.org/repos/asf/struts/maven/trunk/build</connection>
