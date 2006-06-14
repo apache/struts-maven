@@ -29,6 +29,11 @@
    <version>2</version>
    <packaging>pom</packaging>
    <name>Apache Struts</name>
+   <scm>
+     <connection>scm:svn:http://svn.apache.org/repos/asf/struts/maven/trunk/pom</connection>
+     <developerConnection>scm:svn:http://svn.apache.org/repos/asf/struts/maven/trunk/pom</developerConnection>
+     <url>http://svn.apache.org/repos/asf/struts/maven/trunk/pom</url>
+   </scm>
    <description>
     The goal of the Apache Struts project is to encourage application 
     architectures based on the "Model 2" approach, a variation of the classic 
