@@ -96,7 +96,10 @@
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <module name="JavadocMethod"/>
+        <module name="JavadocMethod">
+          <property name="allowUndeclaredRTE" value="true"/>
+        </module>
+
         <module name="JavadocType"/>
         <module name="JavadocVariable"/>
         <module name="JavadocStyle"/>
@@ -213,7 +216,9 @@
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
         <module name="InterfaceIsType"/>
-        <module name="VisibilityModifier"/>
+        <module name="VisibilityModifier">
+          <property name="protectedAllowed" value="true"/>
+        </module>
 
 
         <!-- Miscellaneous other checks.                   -->
@@ -221,8 +226,8 @@
         <module name="ArrayTypeStyle"/>
         <!-- Disabled for Struts: module name="FinalParameters"/ -->
         <module name="GenericIllegalRegexp">
-            <property name="format" value="\s+$"/>
-            <property name="message" value="Line has trailing spaces."/>
+          <property name="format" value="\s+$"/>
+          <property name="message" value="Line has trailing spaces."/>
         </module>
         <module name="TodoComment"/>
         <module name="UpperEll"/>
