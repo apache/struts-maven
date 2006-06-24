@@ -302,6 +302,14 @@
             <role>Committer</role>
          </roles>
       </developer>
+      <developer>
+         <name>Michael Jouravlev</name>
+         <id>mikus</id>
+         <email>mikus at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
    </developers>
    <distributionManagement>
       <repository>
