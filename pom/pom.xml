@@ -303,9 +303,25 @@
          </roles>
       </developer>
       <developer>
+         <name>Paul Benedict</name>
+         <id></id>
+         <email></email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
+      <developer>
          <name>Michael Jouravlev</name>
          <id>mikus</id>
          <email>mikus at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
+      <developer>
+         <name>Bob Lee</name>
+         <id>crazybob</id>
+         <email>crazybob at apache.org</email>
          <roles>
             <role>Committer</role>
          </roles>
