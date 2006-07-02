@@ -22,10 +22,10 @@
    <parent>
       <groupId>org.apache</groupId>
       <artifactId>apache</artifactId>
-      <version>1</version>
+      <version>2</version>
    </parent>
    <groupId>org.apache.struts</groupId>
-   <artifactId>struts-parent</artifactId>
+   <artifactId>struts-master</artifactId>
    <version>3-SNAPSHOT</version>
    <packaging>pom</packaging>
    <name>Apache Struts</name>
@@ -329,14 +329,14 @@
    </developers>
    <distributionManagement>
       <repository>
-         <id>apache-maven-releases</id>
-         <name>Apache Maven Repository (Releases)</name>
-         <url>scp://people.apache.org/www/www.apache.org/dist/maven-repository</url>
+         <id>apache.snapshots</id>
+         <name>Apache Development Snapshot (and Test Build) Repository</name>
+         <url>scp://people.apache.org/www/cvs.apache.org/maven-snapshot-repository</url>
       </repository>
       <snapshotRepository>
          <uniqueVersion>false</uniqueVersion>
-         <id>apache-maven-snapshots</id>
-         <name>Apache Maven Repository (Snapshots)</name>
+         <id>apache.snapshots</id>
+         <name>Apache Development Snapshot Repository</name>
          <url>scp://people.apache.org/www/cvs.apache.org/maven-snapshot-repository</url>
       </snapshotRepository>
       <site>
