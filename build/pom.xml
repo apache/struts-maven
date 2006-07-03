@@ -25,8 +25,8 @@
 
    <parent>
       <groupId>org.apache.struts</groupId>
-      <artifactId>struts-parent</artifactId>
-      <version>2</version>
+      <artifactId>struts-master</artifactId>
+      <version>3-SNAPSHOT</version>
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
@@ -44,45 +44,5 @@
       <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/maven/trunk/build</developerConnection>
       <url>http://svn.apache.org/repos/asf/struts/maven/trunk/build</url>
    </scm>
-
-   <distributionManagement>
-      <repository>
-         <id>apache-maven-test-builds</id>
-         <name>Apache Maven Repository (Test Builds)</name>
-         <url>scp://people.apache.org/www/cvs.apache.org/maven-snapshot-repository</url>
-      </repository>
-   </distributionManagement>
-
-   <build>
-
-      <resources>
-         <resource>
-            <directory>${basedir}</directory>
-            <targetPath>org/apache/struts/build</targetPath>
-            <includes>
-               <include>struts_checks.xml</include>
-               <include>LICENSE.CheckStyle</include>
-               <include>struts_jalopy.xml</include> 
-               <include>LICENSE.txt</include>
-               <include>NOTICE.txt</include>
-            </includes>
-         </resource>
-      </resources>
-
-   </build>
-
-   <repositories>
-      <repository>
-         <id>apache.snapshots</id>
-         <name>Apache Maven Repository (Snapshots and Test Builds)</name>
-         <url>http://cvs.apache.org/maven-snapshot-repository</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </repository>
-   </repositories>
 
 </project>
