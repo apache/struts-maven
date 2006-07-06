@@ -134,9 +134,10 @@
 
         <!-- Following interprets the header file as regular expressions. -->
         <!-- <module name="RegexpHeader"/>                                -->
-        <!--module name="RegexpHeader">
-            <property name="headerFile" value="${checkstyle.regexp.header}"/>
-        </module-->
+        <module name="RegexpHeader">
+            <property name="header" 
+                      value="/\*\s*\n \*\s*\$Id.*\$\n \*\s*\n \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.\n \*\s*\n \*\s*Licensed under the Apache License, Version 2\.0 \(the .License.\);\n \*\s*you may not use this file except in compliance with the License\.\n \*\s*You may obtain a copy of the License at\n \*\s*\n \*\s*http://www\.apache\.org/licenses/LICENSE\-2\.0\n \*\s*\n \*\s*Unless required by applicable law or agreed to in writing, software\n \*\s*distributed under the License is distributed on an .AS IS. BASIS,\n \*\s*WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied\.\n \*\s*See the License for the specific language governing permissions and\n \*\s*limitations under the License\.\n \*/\s*"/>
+        </module>
 
 
         <!-- Checks for imports                              -->
