@@ -6,9 +6,9 @@
 	<artifactId>${artifactId}</artifactId>
 	<packaging>war</packaging>
 	<version>${version}</version>
-	<name>SAF2 Quickstart Web App Sample</name>
+	<name>Struts 2 Quickstart Web App Sample</name>
 	<url>http://www.myComp.com</url>
-	<description>Apache Struts Action Framework 2 - Maven Archetype - Quickstart</description>
+	<description>Struts 2 - Maven Archetype - Quickstart</description>
 	
 	<dependencies>
 		<!-- Junit -->
@@ -19,7 +19,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!--  SAF2 -->
+		<!--  Struts 2 -->
 		<dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
@@ -106,14 +106,17 @@
 			<artifactId>spring-web</artifactId>
 			<version>1.2.6</version>
 		</dependency>
-		
-		<!-- JasperReport -->
-		<dependency>
+
+        <!-- JasperReports is available under
+             the GPL,  LGPL, and commercial licenses.
+             http://www.jaspersoft.com/pr_licensing.html
+        <dependency>
             <groupId>jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
             <version>1.2.1</version>
         </dependency>
-	</dependencies>
+        -->
+    </dependencies>
 	
 	<repositories>
      	<repository>
