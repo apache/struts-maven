@@ -6,9 +6,9 @@
 	<artifactId>${artifactId}</artifactId>
 	<packaging>war</packaging>
 	<version>${version}</version>
-	<name>Struts 2 Quickstart Web App Sample</name>
+	<name>Struts 2 Starter Web App Sample</name>
 	<url>http://www.myComp.com</url>
-	<description>Struts 2 - Maven Archetype - Quickstart</description>
+	<description>Struts 2 - Maven Archetype - Starter</description>
 	
 	<dependencies>
 		<!-- Junit -->

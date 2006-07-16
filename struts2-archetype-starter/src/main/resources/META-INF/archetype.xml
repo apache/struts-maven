@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <archetype>
-  <id>quickstart</id>
+  <id>starter</id>
   <sources>
     <source>src/main/java/com/myComp/myApp/HelloWorldAction.java</source>
     <source>src/main/java/com/myComp/myApp/IndexAction.java</source>
