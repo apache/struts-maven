@@ -30,7 +30,7 @@ USAGE
   mvn archetype:create -DgroupId=com.myCompany.mySystem \
                        -DartifactId=myWebApp \
                        -DarchetypeGroupId=org.apache.struts \
-                       -DarchetypeArtifactId=struts2-archetype-quickstart \
+                       -DarchetypeArtifactId=struts2-archetype-starter \
                        -DarchetypeVersion=1.0-SNAPSHOT \
                        -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
 
