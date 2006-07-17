@@ -11,7 +11,7 @@
   	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-validation.xml</resource>
   	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-helloWorld-validation.xml</resource>
   	<resource>src/main/resources/com/myComp/myApp/IndexAction-conversion.properties</resource>
-  	<resource>src/main/resources/xwork.xml</resource>
+  	<resource>src/main/resources/struts.xml</resource>
   	<resource>src/main/resources/xwork-conversion.properties</resource>
   	<resource>src/main/resources/struts.properties</resource>
   	<resource>src/main/webapp/ftl/index.ftl</resource>

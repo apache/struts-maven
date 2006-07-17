@@ -19,7 +19,7 @@ package com.myComp.myApp;
 
 import junit.framework.TestCase;
 
-import com.opensymphony.xwork.Action;
+import com.opensymphony.xwork2.Action;
 
 /**
  * 
