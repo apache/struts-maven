@@ -17,7 +17,7 @@
  */
 package com.myComp.myApp;
 
-import com.opensymphony.xwork.ActionSupport;
+import com.opensymphony.xwork2.ActionSupport;
 
 import java.util.Date;
 

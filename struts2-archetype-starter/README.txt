@@ -1,16 +1,16 @@
 INFORMATION
 ===========
-- This is Struts2's maven archetype plugin. 
+- This is Struts 2's maven archetype plugin. 
 - To be used to create a simple webapp template that one could alter to meet his/her needs.
 - The created template contains
   - sitemesh integeration
-  - a simple Struts2 action
-  - a simple Struts2 action level validation
-  - a simple Struts2 action alias level validation
-  - a simple Struts2 global conversion
-  - a simple Struts2 action level conversion
-  - a simple Struts2 global resource bundle
-  - a simple Struts2 action level resource bundle
+  - a simple Struts action
+  - a simple Struts action level validation
+  - a simple Struts action alias level validation
+  - a simple Struts global conversion
+  - a simple Struts action level conversion
+  - a simple Struts global resource bundle
+  - a simple Struts action level resource bundle
   
 
 USAGE
