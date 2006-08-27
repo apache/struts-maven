@@ -10,10 +10,12 @@ To use the archetype to create a blank project:
    $ mvn archetype:create                                    \
          -DarchetypeGroupId=org.apache.struts                \
          -DarchetypeArtifactId=struts-archetype-blank        \
-         -DarchetypeVersion=1.0-SNAPSHOT                     \
+         -DarchetypeVersion=<version>                        \
          -DgroupId=com.example                               \
          -DpackageName=com.example.projectname               \
-         -DartifactId=my-webapp                              \
+         -DartifactId=projectname                              
+
+         If <version> ends in -SNAPSHOT, use the snapshot repo:
          -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
          
 To build your new webapp:

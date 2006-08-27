@@ -138,8 +138,10 @@
 
 	  Paths found in Tiles definitions are relative to the main context.
 
-      To use this plugin, uncomment the struts-tiles dependency in pom.xml
-      directory then uncomment the plugin definition below.
+      To use this plugin, uncomment the following:
+        - the struts-tiles dependency in pom.xml,
+        - the chainConfig init-param in web.xml, and
+        - the the plugin definition below.
 
   -->
   <!--
