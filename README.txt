@@ -1,9 +1,9 @@
 INFORMATION
 ===========
-- This is Struts 2's maven archetype plugin. 
+- This is Struts 2's "Starter" Maven Archetype
 - To be used to create a simple webapp template that one could alter to meet his/her needs.
 - The created template contains
-  - sitemesh integeration
+  - sitemesh integration
   - a simple Struts action
   - a simple Struts action level validation
   - a simple Struts action alias level validation
@@ -31,7 +31,7 @@ USAGE
                        -DartifactId=myWebApp \
                        -DarchetypeGroupId=org.apache.struts \
                        -DarchetypeArtifactId=struts2-archetype-starter \
-                       -DarchetypeVersion=1.0-SNAPSHOT \
+                       -DarchetypeVersion=2.0.0-SNAPSHOT \
                        -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
 
 THis will create the sample Web app template
