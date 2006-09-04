@@ -21,7 +21,7 @@ USAGE
   
      cd /home/tmjee/projects
   
-- run the following command to generate the sample web app templatem, assuming :-
+- run the following command to generate the sample web app template, assuming :-
     - root java package -> com.myCompany.mySystem
 
     - the webapp war name   ->  myWebApp
@@ -34,7 +34,20 @@ USAGE
                        -DarchetypeVersion=2.0.0-SNAPSHOT \
                        -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
 
-THis will create the sample Web app template
+- The generated template is a runnable webapp, some package renaming is necessary if 
+the Struts2 validation, conversion features is to work. In the case above, one would
+need to rename the resources under 
+
+src/main/resource/com/myComp/myApp/* 
+
+to
+
+src/main/resource/com/myCompany/mySystem/*
+
+This is due to the fact that I can't find a way to change maven archetype resource 
+path dynamically. If anyone knows how kindly let me know (tm_jee(at)yahoo.co.uk). 
+Tia 
+
 
 - to compile, execute
   mvn compile
