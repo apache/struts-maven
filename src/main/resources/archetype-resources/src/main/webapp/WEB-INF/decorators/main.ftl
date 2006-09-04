@@ -5,10 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>${title}</title>
-    <link href="<@saf.url value='/styles/main.css'/>" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<@saf.url value='/struts/niftycorners/niftyCorners.css'/>" rel="stylesheet" type="text/css"/>
-    <link href="<@saf.url value='/struts/niftycorners/niftyPrint.css'/>" rel="stylesheet" type="text/css" media="print"/>
-    <script language="JavaScript" type="text/javascript" src="<@saf.url value='/struts/niftycorners/nifty.js'/>"></script>
+    <link href="<@s.url value='/styles/main.css'/>" rel="stylesheet" type="text/css" media="all"/>
+    <link href="<@s.url value='/struts/niftycorners/niftyCorners.css'/>" rel="stylesheet" type="text/css"/>
+    <link href="<@s.url value='/struts/niftycorners/niftyPrint.css'/>" rel="stylesheet" type="text/css" media="print"/>
+    <script language="JavaScript" type="text/javascript" src="<@s.url value='/struts/niftycorners/nifty.js'/>"></script>
 	<script language="JavaScript" type="text/javascript">
         window.onload = function(){
             if(!NiftyCheck()) {
