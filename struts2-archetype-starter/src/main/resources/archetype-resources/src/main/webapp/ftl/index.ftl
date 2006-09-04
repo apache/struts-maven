@@ -11,7 +11,7 @@
 	<@s.form action="helloWorld">
 		<@s.textfield label="What is your name?" name="name" />
 		<@s.submit />
-	</@f.form>
+	</@s.form>
 </body>
 </html>
 	

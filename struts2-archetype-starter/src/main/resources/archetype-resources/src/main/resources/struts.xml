@@ -7,7 +7,7 @@
 <struts>
 	<include file="struts-default.xml" />
 	<package name="myPackage" extends="struts-default">
-		<action name="index" class="com.myComp.myApp.IndexAction">
+		<action name="index" class="${groupId}.IndexAction">
 			<result type="freemarker">/ftl/index.ftl</result>
 		</action>
 		<action name="helloWorld" class="helloWorldAction"> 
