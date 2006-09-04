@@ -47,7 +47,7 @@
     <source>src/test/java/IndexActionTest.java</source>
   </testSources>
   <testResources>
-  	<resource>src/test/resources/com/myComp/myApp/HelloWorldActionTest.properties</resource>
+  	<resource>src/test/resources/test.properties</resource>
   </testResources>
 </archetype>
 

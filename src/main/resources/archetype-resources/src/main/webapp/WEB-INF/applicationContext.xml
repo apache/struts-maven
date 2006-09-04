@@ -5,6 +5,6 @@
 	
 <beans>
 	<!-- Example of SAF2 action instantiated by Spring -->
-    <bean id="helloWorldAction" class="${groupId}.HelloWorldAction" singleton="false" />
+    <bean id="helloWorldAction" class="${package}.HelloWorldAction" singleton="false" />
 </beans>
 
