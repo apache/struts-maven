@@ -15,21 +15,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.myComp.myApp;
+package ${groupId};
 
-import com.opensymphony.xwork2.ActionSupport;
+import junit.framework.TestCase;
+
+import com.opensymphony.xwork2.Action;
 
 /**
  * 
  */
-public class HelloWorldAction extends ActionSupport {
+public class IndexActionTest extends TestCase {
     
-    private String name;
-    
-    public String getName() { return this.name; }
-    public void setName(String name) { this.name = name; }
-    
-    public String execute() throws Exception {
-        return SUCCESS;
+    public void testIndexAction() throws Exception {
+        IndexAction action = new IndexAction();
+        String result = action.execute();
+        assertEquals(Action.SUCCESS, result);
     }
 }

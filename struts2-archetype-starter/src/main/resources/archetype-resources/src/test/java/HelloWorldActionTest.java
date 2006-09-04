@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.myComp.myApp;
+package ${groupId};
 
 import junit.framework.TestCase;
 
@@ -24,11 +24,12 @@ import com.opensymphony.xwork2.Action;
 /**
  * 
  */
-public class IndexActionTest extends TestCase {
+public class HelloWorldActionTest extends TestCase {
     
-    public void testIndexAction() throws Exception {
-        IndexAction action = new IndexAction();
+    public void testHelloWorldAction() throws Exception {
+        HelloWorldAction action = new HelloWorldAction();
         String result = action.execute();
         assertEquals(Action.SUCCESS, result);
     }
 }
+
