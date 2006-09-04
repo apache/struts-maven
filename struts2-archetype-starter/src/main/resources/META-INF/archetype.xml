@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <archetype>
-  <id>starter</id>
+  <id>struts2-archetype-starter</id>
   <sources>
-    <source>src/main/java/com/myComp/myApp/HelloWorldAction.java</source>
-    <source>src/main/java/com/myComp/myApp/IndexAction.java</source>
-    <source>src/main/java/com/myComp/myApp/DateConverter.java</source>
+    <source>src/main/java/HelloWorldAction.java</source>
+    <source>src/main/java/IndexAction.java</source>
+    <source>src/main/java/DateConverter.java</source>
   </sources>
   <resources>
   	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-validation.xml</resource>
   	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-helloWorld-validation.xml</resource>
   	<resource>src/main/resources/com/myComp/myApp/IndexAction-conversion.properties</resource>
+  	<resource>src/main/resources/com/myComp/myApp/IndexAction.properties</resource>
+  	<resource>src/main/resources/com/myComp/myApp/package.properties</resource>
   	<resource>src/main/resources/struts.xml</resource>
   	<resource>src/main/resources/xwork-conversion.properties</resource>
   	<resource>src/main/resources/struts.properties</resource>
@@ -41,8 +43,8 @@
 	<resource>src/main/webapp/index.jsp</resource>  	
   </resources>
   <testSources>
-    <source>src/test/java/com/myComp/myApp/HelloWorldActionTest.java</source>
-    <source>src/test/java/com/myComp/myApp/IndexActionTest.java</source>
+    <source>src/test/java/HelloWorldActionTest.java</source>
+    <source>src/test/java/IndexActionTest.java</source>
   </testSources>
   <testResources>
   	<resource>src/test/resources/com/myComp/myApp/HelloWorldActionTest.properties</resource>
