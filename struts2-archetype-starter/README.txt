@@ -47,7 +47,7 @@ to
 src/main/resource/com/myCompany/mySystem/*
 
 This is due to the fact that I can't find a way to change maven archetype resource 
-path dynamically. If anyone knows how kindly let me know (tm_jee(at)yahoo.co.uk). 
+path dynamically. If anyone knows how kindly let us know (dev@struts.apache.org). 
 Tia 
 
 
