@@ -31,7 +31,7 @@ USAGE
                        -DartifactId=myWebApp \
                        -DarchetypeGroupId=org.apache.struts \
                        -DarchetypeArtifactId=struts2-archetype-starter \
-                       -DarchetypeVersion=2.0.0-SNAPSHOT \
+                       -DarchetypeVersion=2.0.1-SNAPSHOT \
                        -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
 
 IMPORTANT:
@@ -50,9 +50,8 @@ This is due to the fact that I can't find a way to change maven archetype resour
 path dynamically. If anyone knows how kindly let us know (dev@struts.apache.org). 
 Tia 
 
-
-
-
+COMMON TASKS
+==========
 
 - to compile, execute
   mvn compile
@@ -67,8 +66,4 @@ Tia
   mvn package
 
 - to start it with jetty6 execute
-  mvn jetty6:run
-
-
-
-
+  mvn jetty:run
