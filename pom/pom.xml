@@ -326,6 +326,15 @@
             <role>Committer</role>
          </roles>
       </developer>
+      <developer>
+         <name>David H. DeWolf</name>
+         <id>ddewolf</id>
+         <email>ddewolf at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
+
    </developers>
    <distributionManagement>
       <repository>
