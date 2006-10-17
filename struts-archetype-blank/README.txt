@@ -13,7 +13,7 @@ To use the archetype to create a blank project:
          -DarchetypeVersion=<version>                        \
          -DgroupId=com.example                               \
          -DpackageName=com.example.projectname               \
-         -DartifactId=projectname                              
+         -DartifactId=my-webapp
 
          If <version> ends in -SNAPSHOT, use the snapshot repo:
          -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
@@ -22,6 +22,14 @@ To build your new webapp:
 
    $ cd my-webapp
    $ mvn install
+
+
+To start run the new webapp inplace via Jetty plugin:
+
+   $ mvn jetty:run
+
+ Browse to http://localhost:8080/my-webapp/
+
 
 To start Tomcat and deploy your new webapp:
 

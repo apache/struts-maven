@@ -10,7 +10,7 @@
    </parent>
    <groupId>org.apache.struts</groupId>
    <artifactId>struts-archetype-blank</artifactId>
-   <version>1.3.5-SNAPSHOT</version>
+   <version>1.3.6-SNAPSHOT</version>
    <packaging>jar</packaging>
    <name>Struts Archetypes - Blank</name>
 
