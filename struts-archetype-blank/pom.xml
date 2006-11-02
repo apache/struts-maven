@@ -14,4 +14,10 @@
    <packaging>jar</packaging>
    <name>Struts Archetypes - Blank</name>
 
+    <scm>
+       <connection>scm:svn:http://svn.apache.org/repos/asf/struts/maven/trunk/struts-archetype-blank/</connection>
+       <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/maven/trunk/struts-archetype-blank/</developerConnection>
+       <url>http://svn.apache.org/viewcvs.cgi/struts/maven/trunk/struts-archetype-blank/</url>
+    </scm>
+
 </project>
