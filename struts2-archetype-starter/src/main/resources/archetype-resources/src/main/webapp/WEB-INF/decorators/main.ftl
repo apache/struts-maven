@@ -57,7 +57,7 @@
                 <div class="wrapper">
                 <h3>Nav. bar</h3>
                 <ul class="clearfix">
-                     <li><a href="home.html">Home</a></li>
+                     <li><a href="#">Home</a></li>
                      <li><a href="#">Articles</a></li>
                      <li><a href="#">Archive</a></li>
                      <li><a href="#">Photos</a></li>

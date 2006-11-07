@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE web-app PUBLIC 
-	"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
-	"http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app id="starter" version="2.4" 
+         xmlns="http://java.sun.com/xml/ns/j2ee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	
-<web-app>
 	<display-name>Struts 2 - Maven Archetype - Starter</display-name>
 	
 	<context-param>
@@ -59,6 +60,11 @@
             <param-value>true</param-value>
         </init-param>
     </servlet>
+    <servlet>
+    	<servlet-name>jspSupportServlet</servlet-name>
+    	<servlet-class>org.apache.struts2.views.JspSupportServlet</servlet-class>
+    	<load-on-startup>5</load-on-startup>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>dwr</servlet-name>
@@ -73,14 +79,4 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
-
-	<!-- Taglibs -->
-    <taglib>
-        <taglib-uri>sitemesh-page</taglib-uri>
-        <taglib-location>/WEB-INF/sitemesh-page.tld</taglib-location>
-    </taglib>
-    <taglib>
-        <taglib-uri>sitemesh-decorator</taglib-uri>
-        <taglib-location>/WEB-INF/sitemesh-decorator.tld</taglib-location>
-    </taglib>
 </web-app>
