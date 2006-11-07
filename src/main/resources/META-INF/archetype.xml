@@ -17,6 +17,7 @@
   	<resource>src/main/resources/xwork-conversion.properties</resource>
   	<resource>src/main/resources/struts.properties</resource>
   	<resource>src/main/resources/applicationContext.xml</resource>
+  	<resource>src/main/resources/log4j.properties</resource>
   	<resource>src/main/webapp/ftl/index.ftl</resource>
 	<resource>src/main/webapp/ftl/helloWorld.ftl</resource>
 	<resource>src/main/webapp/WEB-INF/decorators/main.ftl</resource>
