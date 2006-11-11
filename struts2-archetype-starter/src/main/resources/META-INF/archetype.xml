@@ -38,8 +38,6 @@
 	<resource>src/main/webapp/styles/typo.css</resource>
 	<resource>src/main/webapp/WEB-INF/dwr.xml</resource>
 	<resource>src/main/webapp/WEB-INF/sitemesh.xml</resource>
-	<resource>src/main/webapp/WEB-INF/sitemesh-decorator.tld</resource>
-	<resource>src/main/webapp/WEB-INF/sitemesh-page.tld</resource>
 	<resource>src/main/webapp/WEB-INF/web.xml</resource>
 	<resource>src/main/webapp/index.jsp</resource>  	
   </resources>
