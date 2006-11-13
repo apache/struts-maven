@@ -18,5 +18,15 @@
        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/maven/trunk/struts2-archetype-starter/</developerConnection>
        <url>http://svn.apache.org/viewcvs.cgi/struts/maven/trunk/struts2-archetype-starter/</url>
     </scm>
+    
+    <repositories>
+        <repository>
+            <id>apache.snapshots</id>
+            <name>Apache Maven Repository (Snapshots and Test Builds)</name>
+            <url>http://people.apache.org/repo/m2-snapshot-repository</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
 
 </project>
