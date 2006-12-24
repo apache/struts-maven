@@ -3,51 +3,21 @@
 <archetype>
   <id>struts2-archetype-starter</id>
   <sources>
-    <source>src/main/java/HelloWorldAction.java</source>
-    <source>src/main/java/IndexAction.java</source>
-    <source>src/main/java/DateConverter.java</source>
+    <source>src/main/java/example/ExampleSupport.java</source>
+    <source>src/main/java/example/HelloWorld.java</source>
+    <source>src/main/java/example/Login.java</source>
   </sources>
   <resources>
-  	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-validation.xml</resource>
-  	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-helloWorld-validation.xml</resource>
-  	<resource>src/main/resources/com/myComp/myApp/IndexAction-conversion.properties</resource>
-  	<resource>src/main/resources/com/myComp/myApp/IndexAction.properties</resource>
-  	<resource>src/main/resources/com/myComp/myApp/package.properties</resource>
+  	<resource>src/main/resources/example/Login-validation.xml</resource>
+  	<resource>src/main/resources/example/package.properties</resource>
+  	<resource>src/main/resources/example/package_es.properties</resource>
+  	<resource>src/main/resources/example.xml</resource>
   	<resource>src/main/resources/struts.xml</resource>
-  	<resource>src/main/resources/xwork-conversion.properties</resource>
-  	<resource>src/main/resources/struts.properties</resource>
-  	<resource>src/main/resources/applicationContext.xml</resource>
-  	<resource>src/main/webapp/ftl/index.ftl</resource>
-	<resource>src/main/webapp/ftl/helloWorld.ftl</resource>
-	<resource>src/main/webapp/WEB-INF/decorators/main.ftl</resource>
-	<resource>src/main/webapp/WEB-INF/decorators.xml</resource>
-	<resource>src/main/webapp/styles/main.css</resource>
-	<resource>src/main/webapp/styles/forms.css</resource>
-	<resource>src/main/webapp/styles/layout.css</resource>
-	<resource>src/main/webapp/styles/layout-1col.css</resource>
-	<resource>src/main/webapp/styles/layout-navleft-1col.css</resource>
-	<resource>src/main/webapp/styles/layout-navleft-2col.css</resource>
-	<resource>src/main/webapp/styles/layout-navtop-1col.css</resource>
-	<resource>src/main/webapp/styles/layout-navtop-3col.css</resource>
-	<resource>src/main/webapp/styles/layout-navtop-localleft.css</resource>
-	<resource>src/main/webapp/styles/layout-navtop-subright.css</resource>
-	<resource>src/main/webapp/styles/nav-horizontal.css</resource>
-	<resource>src/main/webapp/styles/nav-vertical.css</resource>
-	<resource>src/main/webapp/styles/tools.css</resource>
-	<resource>src/main/webapp/styles/typo.css</resource>
-	<resource>src/main/webapp/WEB-INF/dwr.xml</resource>
-	<resource>src/main/webapp/WEB-INF/sitemesh.xml</resource>
-	<resource>src/main/webapp/WEB-INF/sitemesh-decorator.tld</resource>
-	<resource>src/main/webapp/WEB-INF/sitemesh-page.tld</resource>
-	<resource>src/main/webapp/WEB-INF/web.xml</resource>
-	<resource>src/main/webapp/index.jsp</resource>  	
   </resources>
   <testSources>
-    <source>src/test/java/HelloWorldActionTest.java</source>
-    <source>src/test/java/IndexActionTest.java</source>
+    <source>src/test/java/example/ConfigTest.java</source>
+    <source>src/test/java/example/HelloWorldTest.java</source>
+    <source>src/test/java/example/Login.java</source>
   </testSources>
-  <testResources>
-  	<resource>src/test/resources/test.properties</resource>
-  </testResources>
 </archetype>
 
