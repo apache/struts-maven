@@ -1,17 +1,6 @@
 INFORMATION
 ===========
-- This is Struts 2's "Starter" Maven Archetype
-- To be used to create a simple webapp template that one could alter to meet his/her needs.
-- The created template contains
-  - sitemesh integration
-  - a simple Struts action
-  - a simple Struts action level validation
-  - a simple Struts action alias level validation
-  - a simple Struts global conversion
-  - a simple Struts action level conversion
-  - a simple Struts global resource bundle
-  - a simple Struts action level resource bundle
-  
+- This is Struts 2's "Blank" Maven Archetype
 
 USAGE
 =====
@@ -30,29 +19,17 @@ USAGE
   mvn archetype:create -DgroupId=com.myCompany.mySystem \
                        -DartifactId=myWebApp \
                        -DarchetypeGroupId=org.apache.struts \
-                       -DarchetypeArtifactId=struts2-archetype-starter \
-                       -DarchetypeVersion=2.0.0-SNAPSHOT \
-                       -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
+                       -DarchetypeArtifactId=struts2-archetype-blank \
+                       -DarchetypeVersion=2.0.2-SNAPSHOT \
+                       -DremoteRepositories=http://people.apache.org/repo/m2-snapshot-repository
 
 IMPORTANT:
 ==========
-- The generated template is a runnable webapp, some package renaming is necessary if 
-the Struts2 validation, conversion features is to work. In the case above, one would
-need to rename the resources under 
+- The generated template uses the 'example' package, regardless of what you
+specify during mvn archetype:create.
 
-src/main/resource/com/myComp/myApp/* 
-
-to
-
-src/main/resource/com/myCompany/mySystem/*
-
-This is due to the fact that I can't find a way to change maven archetype resource 
-path dynamically. If anyone knows how kindly let us know (dev@struts.apache.org). 
-Tia 
-
-
-
-
+Unfortunately, the Maven Archetype plugin does not currently provide a way to
+move resource files into a package structure.
 
 - to compile, execute
   mvn compile
@@ -67,8 +44,5 @@ Tia
   mvn package
 
 - to start it with jetty6 execute
-  mvn jetty6:run
-
-
-
+  mvn jetty:run
 
