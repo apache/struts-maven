@@ -19,7 +19,7 @@
  * under the License.
  */
 
-package example;
+package ${package};
 
 import com.opensymphony.xwork2.ActionSupport;
 
