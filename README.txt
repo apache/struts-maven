@@ -1,7 +1,7 @@
 INFORMATION
 ===========
-- This is Struts 2's "Portlet" Maven Archetype
-- To be used to create a simple portlet that can be deployed as a webapp or JSR168 portlet.
+- This is Struts 2's "Database Portlet" Maven Archetype
+- To be used to create a simple portlet that displays information in a database and can be deployed as a webapp or JSR168 portlet.
  
 
 USAGE
@@ -12,7 +12,7 @@ USAGE
   
      cd /home/tmjee/projects
   
-- run the following command to generate the sample web app template, assuming :-
+- run the following command to generate the sample portlet template, assuming :-
     - root java package -> com.myCompany.myPortlet
 
     - the portlet war name   ->  myWebApp
@@ -21,7 +21,7 @@ USAGE
   mvn archetype:create -DgroupId=com.myCompany.myPortlet \
                        -DartifactId=myWebApp \
                        -DarchetypeGroupId=org.apache.struts \
-                       -DarchetypeArtifactId=struts2-archetype-portlet \
+                       -DarchetypeArtifactId=struts2-archetype-dbportlet \
                        -DarchetypeVersion=2.0.3-SNAPSHOT \
                        -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
 

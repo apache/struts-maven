@@ -10,6 +10,7 @@
   	<resource>src/main/resources/struts.xml</resource>
 	<resource>src/main/webapp/WEB-INF/web.xml</resource>
 	<resource>src/main/webapp/WEB-INF/portlet.xml</resource>
+	<resource>src/main/webapp/WEB-INF/applicationContext.xml</resource>
 	<resource>src/main/webapp/WEB-INF/view/index.jsp</resource>
 	<resource>src/main/webapp/WEB-INF/help/index.jsp</resource>
 	<resource>src/main/webapp/WEB-INF/edit/index-input.jsp</resource>
