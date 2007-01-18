@@ -57,57 +57,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-	
-	<repositories>
-     	<repository>
-            <id>snapshots-maven-codehaus</id>
-            <name>snapshots-maven-codehaus</name>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>ignore</checksumPolicy>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <url>http://snapshots.maven.codehaus.org/maven2</url>
-        </repository>
-        <repository>
-            <id>apache</id>
-            <name>apache</name>
-            <layout>legacy</layout>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>ignore</checksumPolicy>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <url>http://cvs.apache.org/repository</url>
-        </repository>
-        <repository>
-            <id>apache.snapshots</id>
-            <name>Apache Maven Repository (Snapshots and Test Builds)</name>
-            <url>http://cvs.apache.org/maven-snapshot-repository</url>
-            <releases><enabled>true</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>opensymphony</id>
-            <name>opensymphony</name>
-            <layout>legacy</layout>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>ignore</checksumPolicy>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <url>http://maven.opensymphony.com</url>
-        </repository>
-    </repositories>
     
     <build>
       <finalName>${artifactId}</finalName>
