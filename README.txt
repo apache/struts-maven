@@ -12,7 +12,7 @@ USAGE
   
      cd /home/tmjee/projects
   
-- run the following command to generate the sample web app template, assuming :-
+- run the following command to generate the sample portlet template, assuming :-
     - root java package -> com.myCompany.myPortlet
 
     - the portlet war name   ->  myWebApp
