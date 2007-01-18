@@ -76,7 +76,15 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    	
+	<repositories>
+        <repository>
+            <id>Struts 2 Repository</id>
+            <url>http://people.apache.org/builds/struts/2.0.3/m2-staging-repository/</url>
+        </repository>
+    </repositories>
     
+
     <build>
       <finalName>${artifactId}</finalName>
     	<plugins>
