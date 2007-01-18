@@ -1,10 +1,10 @@
 <portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" id="struts-portlet">
-  <portlet id="StrutsPortlet">
-    <description xml:lang="EN">Blank Struts Portlet</description>
-    <portlet-name>StrutsPortlet</portlet-name>
-    <display-name xml:lang="EN">Blank Struts Portlet</display-name>
+  <portlet id="StrutsDBPortlet">
+    <description xml:lang="EN">Struts Database Portlet</description>
+    <portlet-name>StrutsDBPortlet</portlet-name>
+    <display-name xml:lang="EN">Struts Database Portlet</display-name>
     
     <portlet-class>org.apache.struts2.portlet.dispatcher.Jsr168Dispatcher</portlet-class>
 
@@ -54,9 +54,9 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http:
     <supported-locale>en</supported-locale>
 
     <portlet-info>
-      <title>Struts Blank Porlet</title>
-      <short-title>SB</short-title>
-      <keywords>struts,portlet</keywords>
+      <title>Struts Database Porlet</title>
+      <short-title>DB</short-title>
+      <keywords>struts,portlet,database</keywords>
     </portlet-info>
   </portlet>
   

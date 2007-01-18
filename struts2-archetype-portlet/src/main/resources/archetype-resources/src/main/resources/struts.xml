@@ -7,6 +7,7 @@
 <struts>
     <constant name="struts.codebehind.defaultPackage" value="struts-portlet-default" />
     <constant name="struts.codebehind.pathPrefix" value="/WEB-INF/" />
+    <constant name="struts.devMode" value="true" />
 
 	<include file="struts-portlet-default.xml" />
 </struts>
