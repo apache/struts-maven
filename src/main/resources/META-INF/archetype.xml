@@ -8,19 +8,14 @@
     <source>src/main/java/DateConverter.java</source>
   </sources>
   <resources>
-  	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-validation.xml</resource>
-  	<resource>src/main/resources/com/myComp/myApp/HelloWorldAction-helloWorld-validation.xml</resource>
-  	<resource>src/main/resources/com/myComp/myApp/IndexAction-conversion.properties</resource>
-  	<resource>src/main/resources/com/myComp/myApp/IndexAction.properties</resource>
-  	<resource>src/main/resources/com/myComp/myApp/package.properties</resource>
   	<resource>src/main/resources/struts.xml</resource>
   	<resource>src/main/resources/xwork-conversion.properties</resource>
   	<resource>src/main/resources/struts.properties</resource>
   	<resource>src/main/resources/applicationContext.xml</resource>
   	<resource>src/main/resources/log4j.properties</resource>
-  	<resource>src/main/webapp/ftl/index.ftl</resource>
-	<resource>src/main/webapp/ftl/helloWorld.ftl</resource>
-	<resource>src/main/webapp/WEB-INF/decorators/main.ftl</resource>
+  	<resource>src/main/webapp/jsp/index.jsp</resource>
+	<resource>src/main/webapp/jsp/helloWorld.jsp</resource>
+	<resource>src/main/webapp/WEB-INF/decorators/main.jsp</resource>
 	<resource>src/main/webapp/WEB-INF/decorators.xml</resource>
 	<resource>src/main/webapp/styles/main.css</resource>
 	<resource>src/main/webapp/styles/forms.css</resource>

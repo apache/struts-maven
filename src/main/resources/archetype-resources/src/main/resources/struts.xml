@@ -7,11 +7,11 @@
 <struts>
 	<package name="myPackage" extends="struts-default">
 		<action name="index" class="${package}.IndexAction">
-			<result type="freemarker">/ftl/index.ftl</result>
+			<result>/jsp/index.jsp</result>
 		</action>
 		<action name="helloWorld" class="helloWorldAction"> 
-			<result name="input" type="freemarker">/ftl/index.ftl</result>
-			<result type="freemarker">/ftl/helloWorld.ftl</result>
+			<result name="input">/jsp/index.jsp</result>
+			<result>/jsp/helloWorld.jsp</result>
 		</action>
 	</package>
 </struts>
