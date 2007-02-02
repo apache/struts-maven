@@ -18,7 +18,6 @@
 package ${package};
 
 import com.opensymphony.xwork2.ActionSupport;
-
 import java.util.Date;
 
 /**
@@ -26,10 +25,9 @@ import java.util.Date;
  */
 public class IndexAction extends ActionSupport {
     
-    private Date now = new Date(System.currentTimeMillis());;
+    private Date now = new Date(System.currentTimeMillis());
     
     public Date getDateNow() { return now; }
-    public void setDateNow(Date now) { this.now = now; }
     
     public String execute() throws Exception {
         now = new Date(System.currentTimeMillis());
