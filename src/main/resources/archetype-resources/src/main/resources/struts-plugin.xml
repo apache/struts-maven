@@ -40,9 +40,9 @@
        In this example, we create a package that defines a result: -->
 
     <package name="myPlugin-default">
-        <results-types>
+        <result-types>
             <result-type name="myResult" class="${package}.MyResult"/>
-        </results-types>
+        </result-types>
     </package>    
 
 </struts>
