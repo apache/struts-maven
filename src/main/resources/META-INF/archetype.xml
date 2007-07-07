@@ -2,6 +2,9 @@
 
 <archetype>
   <id>struts2-archetype-plugin</id>
+  <sources>
+  	<source>src/main/java/MyResult.java</source>
+  </sources>
   <resources>
   	<resource>src/main/resources/struts-plugin.xml</resource>
   	<resource>LICENSE.txt</resource>

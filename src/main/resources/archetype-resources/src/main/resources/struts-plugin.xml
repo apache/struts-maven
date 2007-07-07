@@ -37,13 +37,12 @@
     <!--
        Finally, you can define your own interceptors, results, and action packages.
 
-       In this example, we create a package that defines an interceptor:
+       In this example, we create a package that defines a result: -->
 
     <package name="myPlugin-default">
-        <interceptors>
-            <interceptor name="myInterceptor" class="com.mycompany.myapp.MyInterceptor"/>
-        </interceptors>
+        <results-types>
+            <result-type name="myResult" class="${package}.MyResult"/>
+        </results-types>
     </package>    
 
-    -->
 </struts>
