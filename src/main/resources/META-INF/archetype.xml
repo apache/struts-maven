@@ -4,6 +4,9 @@
   <id>struts2-archetype-plugin</id>
   <resources>
   	<resource>src/main/resources/struts-plugin.xml</resource>
+  	<resource>LICENSE.txt</resource>
+  	<resource>NOTICE.txt</resource>
+  	<resource>README.txt</resource>
   </resources>
 </archetype>
 
