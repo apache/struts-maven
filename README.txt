@@ -31,7 +31,7 @@ USAGE
                        -DartifactId=myWebApp \
                        -DarchetypeGroupId=org.apache.struts \
                        -DarchetypeArtifactId=struts2-archetype-starter \
-                       -DarchetypeVersion=2.0.6-SNAPSHOT \
+                       -DarchetypeVersion=2.0.9-SNAPSHOT \
                        -DremoteRepositories=http://people.apache.org/maven-snapshot-repository
 
 
