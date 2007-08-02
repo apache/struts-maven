@@ -68,12 +68,33 @@
                    <target>1.5</target>
                 </configuration>
             </plugin>
+            <!-- Plugin to generate the wrapper servlets in the web.xml -->
+            <!--
+            <plugin>
+	          <groupId>org.apache.pluto</groupId>
+		    <artifactId>maven-pluto-plugin</artifactId>
+		    <version>1.1.4</version>
+		    <executions>
+			 <execution>
+			   <phase>generate-resources</phase>
+			   <goals>
+			     <goal>assemble</goal>
+			   </goals>
+			 </execution>
+		    </executions>
+		</plugin>
+            -->
     		<plugin>
     			<groupId>org.mortbay.jetty</groupId>
     			<artifactId>maven-jetty-plugin</artifactId>
     			<version>6.1.1</version>
     			<configuration>
     				<scanIntervalSeconds>10</scanIntervalSeconds>
+                        <!-- Experimental pluto embedded configuration settings -->
+                        <!--
+				<webXml>${project.build.directory}/pluto-resources/web.xml</webXml>
+				<webDefaultXml>src/main/webapp/WEB-INF/jetty-pluto-web-default.xml</webDefaultXml>
+                        -->
     			</configuration>
                 <dependencies>
                     <dependency>
@@ -81,6 +102,34 @@
                         <artifactId>portlet-api</artifactId>
                         <version>1.0</version>
                     </dependency>
+                    <!-- Experimental pluto embedded dependencies -->
+                    <!--
+			  <dependency>
+				<groupId>org.apache.pluto</groupId>
+				<artifactId>pluto-portal-driver</artifactId>
+				<version>1.1.4</version>
+			  </dependency>
+			  <dependency>
+			      <groupId>org.apache.pluto</groupId>
+			      <artifactId>pluto-portal-driver-impl</artifactId>
+			      <version>1.1.4</version>
+			  </dependency>
+			  <dependency>
+			      <groupId>org.apache.pluto</groupId>
+			      <artifactId>pluto-container</artifactId>
+			      <version>1.1.4</version>
+			  </dependency>
+			  <dependency>
+			      <groupId>org.apache.pluto</groupId>
+			      <artifactId>pluto-taglib</artifactId>
+			      <version>1.1.4</version>
+			  </dependency>
+			  <dependency>
+			      <groupId>org.springframework</groupId>
+			      <artifactId>spring-web</artifactId>
+			      <version>2.0.2</version>
+			  </dependency>
+                    -->
                 </dependencies>
     		</plugin>
     	</plugins>
