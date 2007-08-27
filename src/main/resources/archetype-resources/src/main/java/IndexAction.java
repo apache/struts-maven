@@ -30,7 +30,7 @@ public class IndexAction extends ActionSupport {
     
     private Date now = new Date(System.currentTimeMillis());
     
-    @TypeConversion(converter = "com.fdar.apress.s2.DateConverter")
+    @TypeConversion(converter = "${package}.DateConverter")
     public Date getDateNow() { return now; }
     
     public String execute() throws Exception {
