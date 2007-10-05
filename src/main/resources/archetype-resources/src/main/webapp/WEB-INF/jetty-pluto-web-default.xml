@@ -53,35 +53,49 @@
     <param-name>org.mortbay.jetty.webapp.NoTLDJarPattern</param-name>
     <param-value>start.jar|ant-.*\.jar|dojo-.*\.jar|jetty-.*\.jar|jsp-api-.*\.jar|junit-.*\.jar|servlet-api-.*\.jar|dnsns\.jar|rt\.jar|jsse\.jar|tools\.jar|sunpkcs11\.jar|sunjce_provider\.jar|xerces.*\.jar</param-value>
   </context-param>
-            
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>
-			/WEB-INF/pluto-portal-driver-services-config.xml
-		</param-value>
-	</context-param>
 	
 	<listener>
-		<listener-class> org.springframework.web.context.ContextLoaderListener
-			</listener-class>
+		<listener-class>
+			com.bekk.boss.pluto.embedded.jetty.util.OverrideContextLoaderListener
+        </listener-class>
 	</listener>
   <listener>
 		<listener-class>
-			org.apache.pluto.driver.PortalStartupListener
+			com.bekk.boss.pluto.embedded.util.PortalStartupListener
 		</listener-class>
 	</listener>
   <filter>
+	  <filter-name>plutoResourceFilter</filter-name>
+	  <filter-class>com.bekk.boss.pluto.embedded.util.PlutResourcesFilter</filter-class>
+  </filter>
+  <filter>
 	 <filter-name>plutoPortalDriver</filter-name>
-	 <filter-class>org.apache.pluto.driver.PortalDriverFilter</filter-class>
+	 <filter-class>com.bekk.boss.pluto.embedded.util.PlutoPortalDriverFilter</filter-class>
   </filter>
 	
-  <filter-mapping>
-		<filter-name>plutoPortalDriver</filter-name>
-		<url-pattern>/test-portal/index.jsp</url-pattern>
+   <filter-mapping>
+		<filter-name>plutoResourceFilter</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>plutoResourceFilter</filter-name>
+		<url-pattern>*.gif</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>plutoResourceFilter</filter-name>
+		<url-pattern>*.png</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>plutoResourceFilter</filter-name>
+		<url-pattern>*.js</url-pattern>
 	</filter-mapping>
 	<filter-mapping>
 		<filter-name>plutoPortalDriver</filter-name>
-		<url-pattern>/test-portal/index.jsp/*</url-pattern>
+		<url-pattern>/pluto/index.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>plutoPortalDriver</filter-name>
+		<url-pattern>/pluto/index.jsp/*</url-pattern>
 	</filter-mapping>
 
   <!-- ==================================================================== -->
@@ -262,7 +276,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
   <servlet id="jsp">
     <servlet-name>jsp</servlet-name>
-    <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    <servlet-class>com.bekk.boss.pluto.embedded.util.PortletJspServlet</servlet-class>
     <init-param>
         <param-name>logVerbosityLevel</param-name>
         <param-value>DEBUG</param-value>
@@ -322,18 +336,6 @@
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-
-	<jsp-config>
-  	<taglib>
-	    <taglib-uri>http://portals.apache.org/pluto</taglib-uri>
-		<taglib-location>/WEB-INF/tld/pluto.tld</taglib-location>
-	</taglib>
-		  <taglib>
-    <taglib-uri>http://java.sun.com/portlet</taglib-uri>
-    <taglib-location>/WEB-INF/tld/portlet.tld</taglib-location>
-  </taglib>
-	</jsp-config>
-		
 	
   <!-- ==================================================================== -->
   <locale-encoding-mapping-list>
