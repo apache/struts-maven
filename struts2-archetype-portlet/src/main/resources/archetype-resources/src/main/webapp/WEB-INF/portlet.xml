@@ -1,63 +1,58 @@
-<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" id="struts-portlet">
-  <portlet id="StrutsPortlet">
-    <description xml:lang="EN">Blank Struts Portlet</description>
-    <portlet-name>StrutsPortlet</portlet-name>
-    <display-name xml:lang="EN">Blank Struts Portlet</display-name>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app
+    version="1.0"
+    xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+    id="${artifactId}">
+
+    <portlet id="HelloPortlet">
+        <description xml:lang="EN">Simple hello world portlet</description>
+        <portlet-name>HelloPortlet</portlet-name>
+        <display-name xml:lang="EN">${artifactId}</display-name>
     
-    <portlet-class>org.apache.struts2.portlet.dispatcher.Jsr168Dispatcher</portlet-class>
+        <portlet-class>org.apache.struts2.portlet.dispatcher.Jsr168Dispatcher</portlet-class>
 
-    <init-param>
-        <name>actionPackages</name>
-        <value>${package}</value>
-    </init-param>
-    <init-param>
-		<!-- The view mode namespace. Maps to a namespace in the xwork config file -->
-		<name>viewNamespace</name>
-		<value>/view</value>
-	</init-param>
-    <init-param>
-		<!-- The default action to invoke in view mode -->
-		<name>defaultViewAction</name>
-		<value>index</value>
-	</init-param>
-	<init-param>
-		<!-- The view mode namespace. Maps to a namespace in the xwork config file -->
-		<name>editNamespace</name>
-		<value>/edit</value>
-	</init-param>
-    <init-param>
-		<!-- The default action to invoke in view mode -->
-		<name>defaultEditAction</name>
-		<value>index</value>
-	</init-param>
-	<init-param>
-		<!-- The view mode namespace. Maps to a namespace in the xwork config file -->
-		<name>helpNamespace</name>
-		<value>/help</value>
-	</init-param>
-    <init-param>
-		<!-- The default action to invoke in view mode -->
-		<name>defaultHelpAction</name>
-		<value>index</value>
-	</init-param>
-    
-    <expiration-cache>0</expiration-cache>
+		<!-- The namespace for the actions configured for view mode -->
+		<init-param>
+			<name>viewNamespace</name>
+			<value>/view</value>
+		</init-param>
+		
+         <!-- The default action to invoke in view mode. -->
+        <init-param>
+            <name>defaultViewAction</name>
+            <value>index</value>
+        </init-param>
 
-    <supports>
-      <mime-type>text/html</mime-type>
-      <portlet-mode>edit</portlet-mode>
-      <portlet-mode>help</portlet-mode>
-    </supports>
+		<!-- The namespace for the actions configured for edit mode -->
+		<init-param>
+			<name>editNamespace</name>
+			<value>/edit</value>
+		</init-param>
+		
+         <!-- The default action to invoke in edit mode. -->
+        <init-param>
+            <name>defaultEditAction</name>
+            <value>index!input</value>
+        </init-param>
 
-    <supported-locale>en</supported-locale>
+        <expiration-cache>0</expiration-cache>
 
-    <portlet-info>
-      <title>Struts Blank Porlet</title>
-      <short-title>SB</short-title>
-      <keywords>struts,portlet</keywords>
-    </portlet-info>
-  </portlet>
+        <supports>
+            <mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+            <portlet-mode>edit</portlet-mode>
+        </supports>
+
+        <supported-locale>en</supported-locale>
+
+        <portlet-info>
+            <title>HelloPortlet</title>
+            <short-title>HelloPortlet</short-title>
+            <keywords>struts 2,portlet,hello,world</keywords>
+        </portlet-info>
+    </portlet>
   
 </portlet-app>

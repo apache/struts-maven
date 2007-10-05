@@ -1,13 +1,23 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
- 
-<struts>
-    <constant name="struts.codebehind.defaultPackage" value="struts-portlet-default" />
-    <constant name="struts.codebehind.pathPrefix" value="/WEB-INF/" />
-    <constant name="struts.devMode" value="true" />
 
-	<include file="struts-portlet-default.xml" />
+<struts>
+   <package name="default" extends="struts-portlet-default" namespace="/view">
+	   <action name="index" class="${packageName}.HelloAction">
+		   <result>/WEB-INF/jsp/view/index.jsp</result>
+	   </action>
+   </package>
+	
+	<package name="edit" extends="struts-portlet-default" namespace="/edit">
+	
+		<action name="index" class="${packageName}.UpdateNameAction">
+			<result type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="portletMode">view</param>
+			</result>
+			<result name="input">/WEB-INF/jsp/edit/index.jsp</result>
+		</action>
+	</package>
 </struts>

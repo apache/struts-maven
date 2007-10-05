@@ -1,137 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project>
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>${groupId}</groupId>
-	<artifactId>${artifactId}</artifactId>
-	<packaging>war</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <packaging>war</packaging>
+    <name>My Portlet Application</name>
 	<version>${version}</version>
-	<name>Struts 2 Portlet</name>
-	<url>http://www.myComp.com</url>
-	<description>Struts 2 Portlet</description>
 	
 	<dependencies>
-		<!-- Junit -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-
-		<!--  Struts 2 -->
-		<dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-core</artifactId>
-            <version>2.0.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-codebehind-plugin</artifactId>
-            <version>2.0.9</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.1</version>
-        </dependency>
-
-		<!-- Servlet, Jsp, and Portlet API's -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.4</version>
+			<groupId>javax.portlet</groupId>
+			<artifactId>portlet-api</artifactId>
+			<version>1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.0</version>
-			<scope>provided</scope>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-portlet-plugin</artifactId>
+			<version>2.1.0-SNAPSHOT</version>
 		</dependency>
-        <dependency>
-            <groupId>portlet-api</groupId>
-            <artifactId>portlet-api</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-    	
-    <build>
-      <finalName>${artifactId}</finalName>
-    	<plugins>
-    		<plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                   <source>1.5</source>
-                   <target>1.5</target>
-                </configuration>
-            </plugin>
-            <!-- Plugin to generate the wrapper servlets in the web.xml -->
-            <!--
-            <plugin>
-	          <groupId>org.apache.pluto</groupId>
-		    <artifactId>maven-pluto-plugin</artifactId>
-		    <version>1.1.4</version>
-		    <executions>
-			 <execution>
-			   <phase>generate-resources</phase>
-			   <goals>
-			     <goal>assemble</goal>
-			   </goals>
-			 </execution>
-		    </executions>
-		</plugin>
-            -->
-    		<plugin>
-    			<groupId>org.mortbay.jetty</groupId>
-    			<artifactId>maven-jetty-plugin</artifactId>
-    			<version>6.1.1</version>
-    			<configuration>
-    				<scanIntervalSeconds>10</scanIntervalSeconds>
-                        <!-- Experimental pluto embedded configuration settings -->
-                        <!--
-				<webXml>${project.build.directory}/pluto-resources/web.xml</webXml>
-				<webDefaultXml>src/main/webapp/WEB-INF/jetty-pluto-web-default.xml</webDefaultXml>
-                        -->
-    			</configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>portlet-api</groupId>
-                        <artifactId>portlet-api</artifactId>
-                        <version>1.0</version>
-                    </dependency>
-                    <!-- Experimental pluto embedded dependencies -->
-                    <!--
-			  <dependency>
-				<groupId>org.apache.pluto</groupId>
-				<artifactId>pluto-portal-driver</artifactId>
-				<version>1.1.4</version>
-			  </dependency>
-			  <dependency>
-			      <groupId>org.apache.pluto</groupId>
-			      <artifactId>pluto-portal-driver-impl</artifactId>
-			      <version>1.1.4</version>
-			  </dependency>
-			  <dependency>
-			      <groupId>org.apache.pluto</groupId>
-			      <artifactId>pluto-container</artifactId>
-			      <version>1.1.4</version>
-			  </dependency>
-			  <dependency>
-			      <groupId>org.apache.pluto</groupId>
-			      <artifactId>pluto-taglib</artifactId>
-			      <version>1.1.4</version>
-			  </dependency>
-			  <dependency>
-			      <groupId>org.springframework</groupId>
-			      <artifactId>spring-web</artifactId>
-			      <version>2.0.2</version>
-			  </dependency>
-                    -->
-                </dependencies>
-    		</plugin>
-    	</plugins>
-    </build>
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>src/main/webapp/WEB-INF/jetty-pluto-web-default.xml</exclude>
+				</excludes>
+		 	</resource>
+		</resources>
+		<plugins>
+			<plugin>
+      			<artifactId>maven-compiler-plugin</artifactId>
+      			<configuration>
+        				<source>1.5</source>
+        				<target>1.5</target>
+      			</configuration>
+    			</plugin>
+		</plugins>
+	</build>
+	
+	<profiles>
+        <profile>
+            <id>pluto-embedded</id>
+            <build>
+                <plugins>
+					<plugin>
+                        <groupId>org.apache.pluto</groupId>
+                        <artifactId>maven-pluto-plugin</artifactId>
+                        <version>1.1.3</version>
+                        <executions>
+                            <execution>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                   <goal>assemble</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.mortbay.jetty</groupId>
+                        <artifactId>maven-jetty-plugin</artifactId>
+                        <configuration>
+                            <webXml>${project.build.directory}/pluto-resources/web.xml</webXml>
+                            <webDefaultXml>src/main/webapp/WEB-INF/jetty-pluto-web-default.xml</webDefaultXml>
+                            <systemProperties>
+                                <systemProperty>
+                                    <name>org.apache.pluto.embedded.portletId</name>
+                                    <value>HelloPortlet</value>
+                                </systemProperty>
+                            </systemProperties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+			<dependencies>
+				<dependency>
+					<groupId>com.bekk.boss</groupId>
+					<artifactId>maven-jetty-pluto-embedded</artifactId>
+					<version>1.0</version>
+				</dependency>
+				<dependency>
+					<groupId>javax.portlet</groupId>
+					<artifactId>portlet-api</artifactId>
+					<version>1.0</version>
+				</dependency>
+				<dependency>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jetty</artifactId>
+					<version>6.1.5</version>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jsp-2.1</artifactId>
+					<version>6.1.5</version>
+					<scope>provided</scope>
+				</dependency>
+			</dependencies>
+        </profile>
+    </profiles>
+	
+	<repositories>
+		<repository>
+            <id>apache.snapshots</id>
+            <name>Apache Maven Repository (Snapshots and Test Builds)</name>
+            <url>http://people.apache.org/repo/m2-snapshot-repository</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+		<repository>
+            <id>opensymphony</id>
+            <name>opensymphony</name>
+            <layout>legacy</layout>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <url>http://maven.opensymphony.com</url>
+        </repository>
+	</repositories>
+
 </project>
