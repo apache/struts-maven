@@ -19,5 +19,26 @@
        <url>http://svn.apache.org/viewcvs.cgi/struts/maven/trunk/struts2-archetype-plugin/</url>
     </scm>
 
-  <build>    <plugins>      <plugin>        <groupId>org.apache.maven.plugins</groupId>        <artifactId>maven-gpg-plugin</artifactId>        <executions>          <execution>            <id>sign-artifacts</id>            <phase>verify</phase>            <goals>              <goal>sign</goal>            </goals>          </execution>        </executions>      </plugin>    </plugins>  </build>
+  <profiles>
+  <profile>
+   <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
