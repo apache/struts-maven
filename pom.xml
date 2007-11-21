@@ -65,7 +65,7 @@
          <post>dev@struts.apache.org</post>
          <archive>http://mail-archives.apache.org/mod_mbox/struts-dev/</archive>
          <otherArchives>
-            <otherArchive>http://struts.apache.org/mail.html#Archives</otherArchive>
+            <otherArchive>http://struts.apache.org/dev/dev-mail.html#Archives</otherArchive>
          </otherArchives>
       </mailingList>
       <mailingList>
@@ -74,7 +74,7 @@
          <unsubscribe>commits-unsubscribe@struts.apache.org</unsubscribe>
          <archive>http://mail-archives.apache.org/mod_mbox/struts-commits/</archive>
          <otherArchives>
-            <otherArchive>http://struts.apache.org/mail.html#Archives</otherArchive>
+            <otherArchive>http://struts.apache.org/dev/dev-mail.html#Archives</otherArchive>
          </otherArchives>
       </mailingList>
       <mailingList>
@@ -83,7 +83,7 @@
          <unsubscribe>issues-unsubscribe@struts.apache.org</unsubscribe>
          <archive>http://mail-archives.apache.org/mod_mbox/struts-issues/</archive>
          <otherArchives>
-            <otherArchive>http://struts.apache.org/mail.html#Archives</otherArchive>
+            <otherArchive>http://struts.apache.org/dev/dev-mail.html#Archives</otherArchive>
          </otherArchives>
       </mailingList>
    </mailingLists>
