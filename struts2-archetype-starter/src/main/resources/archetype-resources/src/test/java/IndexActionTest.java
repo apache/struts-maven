@@ -1,6 +1,4 @@
 /*
- * $Id: RequestUtils.java 394468 2006-04-16 12:16:03Z tmjee $
- *
  * Copyright 2006 The Apache Software Foundation.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
