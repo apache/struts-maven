@@ -230,7 +230,7 @@
          <id>greddin</id>
          <email>greddin at apache.org</email>
          <roles>
-            <role>PMC Member</role>
+            <role>Committer</role>
          </roles>
       </developer>
       <developer>
@@ -238,7 +238,7 @@
          <id>laurieh</id>
          <email>laurieh at apache.org</email>
          <roles>
-            <role>Committer</role>
+            <role>PMC Member</role>
          </roles>
       </developer>
       <developer>
@@ -254,7 +254,7 @@
          <id>jcarreira</id>
          <email>jcarreira at apache.org</email>
          <roles>
-            <role>Committer</role>
+            <role>PMC Member</role>
          </roles>
       </developer>
       <developer>
@@ -270,7 +270,7 @@
          <id>apopescu</id>
          <email>apopescu at apache.org</email>
          <roles>
-            <role>Committer</role>
+            <role>PMC Member</role>
          </roles>
       </developer>
       <developer>
@@ -278,7 +278,7 @@
          <id>rgielen</id>
          <email>rgielen at apache.org</email>
          <roles>
-            <role>Committer</role>
+            <role>PMC Member</role>
          </roles>
       </developer>
       <developer>
@@ -294,7 +294,7 @@
          <id>tmjee</id>
          <email>tmjee at apache.org</email>
          <roles>
-            <role>Committer</role>
+            <role>PMC Member</role>
          </roles>
       </developer>
       <developer>
@@ -307,8 +307,8 @@
       </developer>
       <developer>
          <name>Paul Benedict</name>
-         <id></id>
-         <email></email>
+         <id>pbenedict</id>
+         <email>pbenedict at apache.org</email>
          <roles>
             <role>Committer</role>
          </roles>
