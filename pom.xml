@@ -353,6 +353,14 @@
             <role>Committer</role>
          </roles>
       </developer>
+	  <developer>
+		 <name>Nils-Helge Garli Hegvik</name>
+		 <id>nilsga</id>
+		 <email>nilsga at apache.org</email>
+		 <roles>
+			<role>Committer</role>
+		 </roles>
+	   </developer>
 
    </developers>
    <distributionManagement>
