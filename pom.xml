@@ -345,6 +345,14 @@
             <role>Committer</role>
          </roles>
       </developer>
+      <developer>
+         <name>Dave Newton</name>
+         <id>daven</id>
+         <email>davenewton at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
 
    </developers>
    <distributionManagement>
