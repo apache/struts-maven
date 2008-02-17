@@ -343,7 +343,7 @@
       <repository>
          <id>struts-staging</id>
          <name>Apache Struts Staging Repository</name>
-         <url>scp://people.apache.org/www/people.apache.org/builds/struts/m2-staging-repository</url>
+         <url>scp://people.apache.org/www/people.apache.org/builds/struts/${project.version}/m2-staging-repository</url>
       </repository>
       <snapshotRepository>
          <uniqueVersion>true</uniqueVersion>
