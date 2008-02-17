@@ -337,6 +337,14 @@
             <role>Committer</role>
          </roles>
       </developer>
+      <developer>
+         <name>Wes Wannemacher</name>
+         <id>wesw</id>
+         <email>wesw at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
 
    </developers>
    <distributionManagement>
