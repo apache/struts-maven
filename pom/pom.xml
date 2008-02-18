@@ -361,7 +361,14 @@
 			<role>Committer</role>
 		 </roles>
 	   </developer>
-
+      <developer>
+         <name>Jeromy Evans</name>
+         <id>jeromy</id>
+         <email>jeromy at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
    </developers>
    <distributionManagement>
       <repository>
