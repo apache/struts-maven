@@ -3,7 +3,7 @@ Please don't use them for email unless you have to. Their main
 purpose is code signing.
 
 Apache users: pgp < KEYS
-Apache developers: 
+Apache developers:
         (pgpk -ll <your name> && pgpk -xa <your name>) >> this file.
       or
         (gpg --fingerprint --list-sigs <your name>
@@ -112,7 +112,7 @@ XlF0aQ==
 -----END PGP PUBLIC KEY BLOCK-----
 
 
-Type Bits/KeyID     Date       User ID 
+Type Bits/KeyID     Date       User ID
 DSS  1024/C56014B2 2004-11-12  Niall Pemberton (Code signing) <niallp@apache.org>
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -277,4 +277,78 @@ XpOd4yQvH9320KlJ4M3B7aBftIe6hH+G9ehQzGqeKQ6h+MMd5ejMfebF3OSuMmJl
 CRDTiK2Cnz6W921kAJ9eKYM9L3MyYzPm4P41EwuzO8HSGQCeMj9Ve/O7AUcKf+3h
 n0KlSV+9E3Q=
 =BntQ
+-----END PGP PUBLIC KEY BLOCK-----
+pub   1024D/CEB32F00 2007-06-02
+    Key fingerprint = EDF7 0BCD 4FD9 DAC4 5EC4  282A B57D 5F90 CEB3 2F00
+uid                  Rainer Hermanns (Code Signing) <hermanns@apache.org>
+sig 3        CEB32F00 2007-06-02  Rainer Hermanns (Code Signing) <hermanns@apache.org>
+sub   2048g/E82D470F 2007-06-02
+sig          CEB32F00 2007-06-02  Rainer Hermanns (Code Signing) <hermanns@apache.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.7 (Darwin)
+
+mQGiBEZhPY8RBADbjCI+7BbH6ZAHSYGk2gvM3EwZHEJH+tZrowsiVeEOLR8+scSh
+A7s2gwtEifuZMQwklAQetkvB/kXdiQkfpEybrTsJoDHta0EXO0+aNm4y8yPxOpeV
++qJpjKmQlCyykbgMw8oFPB1o3rc7MJrZR2lsyuBvk35bVegtOT+epLeC+wCg4MPT
+6NoKK9LY7fQs6Q1bDee6LncEAIFP5zzB71srkvAdPZc+VUsvKFHqav9YImsHjSAI
+6YISgG8Sub68y9Z9RaSC1Z/V8SWWfZhuug3fzvzKHmfb7o3ncE659HJ4xRBabyzp
+oyK9ouEtvjHYGBu5fZKN4I+fWPT0QxbmwySQASDVCbtk0cDM7zLJmigr07zhnQ0e
+O4YwA/kBZYQ9qco+3rl3KxkHqSrgFL78vsfcv1WNFqRdGlePvKbvT60f960PzdwG
+7uJ3QuWjq3qS1FlIiM+vNCcO2UviRngWisA/q3T7lp0VkHa9C/D94YMb48xKWDzm
+9GJ4DM+/nhOgOFfgAs+A5RYH2APhzPSFITuMOP8aPRHq7qXXqrQ0UmFpbmVyIEhl
+cm1hbm5zIChDb2RlIFNpZ25pbmcpIDxoZXJtYW5uc0BhcGFjaGUub3JnPohgBBMR
+AgAgBQJGYT2PAhsDBgsJCAcDAgQVAggDBBYCAwECHgECF4AACgkQtX1fkM6zLwDp
+9gCfYEk784ZeoVcn//C1r4WMaXY54IAAoKO8Au/9QdhBtbvD3JKS5kw+y6sAuQIN
+BEZhPa0QCADZorKt8acyZ2UobqxeeNiWYDw7DDdr0Cf0a7t5D4gWibx4DjkG4vE6
+1q9yWRMaLkTRHdtTDpuEJDaE734Gxon2VplEsJsld+daFyp+eOprnCWYG/pn3a0t
+kdEU3KqFp+Ham96oN8dpVenK4vQk2wERKEzOROP9io7e9YXXBbaGFl6lh582iBWl
+bLnTwHukw5uvZH0fvXImQfUjLJl/hIuEyhfDdHivPV4LKL57ZEXPWVEd1Tpfvhrk
+1keN7egHIZhqRl/B+VwvC+DaKK75o7u1tfg8aeDAtgkbGKRgh9WaTv9cV7VYFexl
+Tfh7CEpIvedCUs9iASMOC8pNjQGC0tSXAAMFCADIFPQFeahfGRYZBheSUeCaPr6N
++jaYoucIWo65317JZpglXaB+ksjX9sh67z2G6DMGxg6LjgwvSV2+trzj3/VAIFGz
+OCLbACnW14EtNUZ4qk6kUxpVgfUmCrujMdZgIB94COdsN6B+28IOwuZydqfNG7JE
+AxJVSdPCE9fU/QbshaKlm5LTccF9TWp9vgvwjyMQgPEAANgTzJwnSdvQWNDCdhCF
+Id27RSFjvxNWTBQoYtV3GJn4swszRILFIctuNRGpg0LQpVe/6hgiCMCbR2Ffhipd
+mo8ZAaTY6UUbCVLgCS0qmLu1dlMql6Pada0U8hnhdgE52RW8V5Z3llSVBFM3iEkE
+GBECAAkFAkZhPa0CGwwACgkQtX1fkM6zLwDl7wCfRtPzVP4qnfFn9xe30N0kE31f
+/bAAniK6wA6MfE1veCy+OJDoqqgI1DgI
+=nbWP
+-----END PGP PUBLIC KEY BLOCK-----
+pub   1024D/066C622A 2008-03-01
+    Schl.-Fingerabdruck = 9796 FF89 DE81 CF75 0A9F  BBC5 C711 D5C8 066C 622A
+uid                  Rene Gielen (CODE SIGNING KEY) <rgielen@apache.org>
+sig 3        066C622A 2008-03-01  Rene Gielen (CODE SIGNING KEY) <rgielen@apache.org>
+sub   2048g/C853586B 2008-03-01
+sig          066C622A 2008-03-01  Rene Gielen (CODE SIGNING KEY) <rgielen@apache.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+mQGiBEfJYysRBADB0m5hs+YAJGxA9Bi0Aew2VzTIDbE96gyiaoLRz4QHY7qcNxru
+5F2LE+IcS8WrQLjQVGMsqvgov/okgURjvX6PA10mrWRaH/piLLSGOeSLjTHIXpqR
+r8ezc5y0QNE/tQq95DbxGK4eD9bi+rkHz8oj6G7YsX5eTiaix2tZNPcY9wCgtPhy
+S/uIQczpO5ynLKWGRVoE78MD/3p4nHPiUegcwzjAZUBUWoctTPxFMOoHnGJZCmfd
+KCV/FB0mNlNxUnHRKGsIR4BPTuqlS62e+7B0dv6yyKUG6Bd4afbvG2eugOXjleTL
+55eN3L4kPsAdSK7BysFE847E1TGvvJhERPxH/YPl8eZ8A8IC3NmxUlMm+aH5uhm2
+OJYxBACgpC+RdY8bjm27B4J8G40F0G22RojcGBQJzZrf8vTSqiSmdghO4KjI+/hY
+EW+eONI7SgNvnodGnAVe5wCYqVxAE1b4AM+6NoMNzZ7ohlw/vxpoaGwAlROuVUbX
+B8Se7BNwUvTnrHuAku5Jo7rM6W6OkyAo6Db9LOqXXGs4qsLlwrQzUmVuZSBHaWVs
+ZW4gKENPREUgU0lHTklORyBLRVkpIDxyZ2llbGVuQGFwYWNoZS5vcmc+iGAEExEC
+ACAFAkfJYysCGwMGCwkIBwMCBBUCCAMEFgIDAQIeAQIXgAAKCRDHEdXIBmxiKhPR
+AJwLO5eDf2E6O51rJzEz2tL+Ah9R1ACfVrQDzbDdFTa2888PJl54n3R4xTK5Ag0E
+R8ljLRAIAJH/OlThkKZbkY9sSlL9gvUKdm+8JMrTg6AYvy6IhQUYc1aIRG3N9B03
+s92gtDBCiQYozLtGyfnM94m8c2KqJAvjjW8xRpyDxxwxP6OPRxpBKXhtPkHtPTte
+UC7/MwzZSoSlK8hCww7GkwVUQQmq8U6bNkpV42TyHQ4mpKg4NVgJlu9xCgLkU6l1
+IIF2kV6wh1n8ucUxDDc229Zw/OerHT+2Ez89smkRaG07cLiOJjLxR7DoGjtwJHux
+0VStXuUZABDFKdiw5ladEROS7fNAq1Cls4bYLjQah3eNvzhY4NVFM1LPtfLXuYjF
+BoELUrWqMSNlWGHwkQwx1HuNfd28QOcAAwUH/2Gc07bFy1t3gseYC6mnBjpiBATZ
+ytfQkqQ7cFpmMDB6uua5VTlvLQ5hItQiFB2nSBZnqyRgj3y6qNOX1gr2OF0uDWe4
+LNBQceR3jtxHoXc2zzu/esZIVaztQ+6Qt+rAcRZlCeOki0KNyu1O20JBsCMAckPf
+vcbx7qBbUzaN3TmEncqJWPZ2iB/UcmKpqHqv6BiKRte91WYLkMA0MEUM2r0YVHPI
+ZXJcd6v1ztKOc9JqiF4EQH2ErRVsFtz3H6ZTENWCiqv1FEz5MID6v5uOVrty0Xa5
+4UVnNzZm2sLp8Zulg+OhFR8iTbcsRTPDf2ht4An62rTep04NjeRw/U+rkXGISQQY
+EQIACQUCR8ljLQIbDAAKCRDHEdXIBmxiKpj3AJ4peg2HksMNj+yJXFppvgP/MEYs
+5QCfeJ554g2a+MLMJJxjTtJrb//kymU=
+=TAgt
 -----END PGP PUBLIC KEY BLOCK-----
