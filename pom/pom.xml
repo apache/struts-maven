@@ -90,14 +90,6 @@
 
    <developers>
       <developer>
-         <name>Craig R. McClanahan</name>
-         <id>craigmcc</id>
-         <email>craigmcc at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
          <name>Ted Husted</name>
          <id>husted</id>
          <email>husted at apache.org</email>
@@ -130,30 +122,6 @@
          </roles>
       </developer>
       <developer>
-         <name>David M. Karr</name>
-         <id>dmkarr</id>
-         <email>dmkarr at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Eddie Bush</name>
-         <id>ekbush</id>
-         <email>ekbush at apache.org</email>
-         <roles>
-            <role>Committer</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>David Graham</name>
-         <id>dgraham</id>
-         <email>dgraham at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
          <name>James Mitchell</name>
          <id>jmitchell</id>
          <email>jmitchell at apache.org</email>
@@ -170,35 +138,11 @@
          </roles>
       </developer>
       <developer>
-         <name>Joe Germuska</name>
-         <id>germuska</id>
-         <email>germuska at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
          <name>Niall Pemberton</name>
          <id>niallp</id>
          <email>niallp at apache.org</email>
          <roles>
             <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Hubert Rabago</name>
-         <id>hrabago</id>
-         <email>hrabago at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>David Geary</name>
-         <id>dgeary</id>
-         <email>dgeary at apache.org</email>
-         <roles>
-            <role>Committer</role>
          </roles>
       </developer>
       <developer>
@@ -210,59 +154,11 @@
          </roles>
       </developer>
       <developer>
-         <name>Gary VanMatre</name>
-         <id>gvanmatre</id>
-         <email>gvanmatre at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Sean Schofield</name>
-         <id>schof</id>
-         <email>schof at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Greg Reddin</name>
-         <id>greddin</id>
-         <email>greddin at apache.org</email>
-         <roles>
-            <role>Committer</role>
-         </roles>
-      </developer>
-      <developer>
          <name>Laurie Harper</name>
          <id>laurieh</id>
          <email>laurieh at apache.org</email>
          <roles>
             <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Richard Feit</name>
-         <id>rich</id>
-         <email>rich at apache.org</email>
-         <roles>
-            <role>Committer</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Jason Carreira</name>
-         <id>jcarreira</id>
-         <email>jcarreira at apache.org</email>
-         <roles>
-            <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Patrick Lightbody</name>
-         <id>plightbo</id>
-         <email>plightbo at apache.org</email>
-         <roles>
-            <role>Committer</role>
          </roles>
       </developer>
       <developer>
@@ -295,14 +191,6 @@
          <email>tmjee at apache.org</email>
          <roles>
             <role>PMC Member</role>
-         </roles>
-      </developer>
-      <developer>
-         <name>Ian Roughley</name>
-         <id>roughley</id>
-         <email>roughley at apache.org</email>
-         <roles>
-            <role>Committer</role>
          </roles>
       </developer>
       <developer>
@@ -353,14 +241,14 @@
             <role>Committer</role>
          </roles>
       </developer>
-	  <developer>
-		 <name>Nils-Helge Garli Hegvik</name>
-		 <id>nilsga</id>
-		 <email>nilsga at apache.org</email>
-		 <roles>
-			<role>Committer</role>
-		 </roles>
-	   </developer>
+      <developer>
+         <name>Nils-Helge Garli Hegvik</name>
+         <id>nilsga</id>
+         <email>nilsga at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
       <developer>
          <name>Jeromy Evans</name>
          <id>jeromy</id>
