@@ -102,7 +102,7 @@
          <id>cedric</id>
          <email>cedric.dumoulin at lifl.fr</email>
          <roles>
-            <role>PMC Member</role>
+            <role>Committer</role>
          </roles>
       </developer>
       <developer>
@@ -126,7 +126,7 @@
          <id>jmitchell</id>
          <email>jmitchell at apache.org</email>
          <roles>
-            <role>PMC Member</role>
+            <role>Committer</role>
          </roles>
       </developer>
       <developer>
