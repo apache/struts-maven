@@ -9,14 +9,13 @@
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>struts2-archetype-blank</artifactId>
-  <version>2.0.9-SNAPSHOT</version>
-  <packaging>maven-plugin</packaging>
+  <version>2.1.2-SNAPSHOT</version>
   <name>Struts 2 Archetypes - Blank</name>
 
     <scm>
        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/maven/trunk/struts2-archetype-blank/</connection>
        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/maven/trunk/struts2-archetype-blank/</developerConnection>
-       <url>http://svn.apache.org/viewcvs.cgi/struts/maven/trunk/struts2-archetype-blank/</url>
+       <url>http://svn.apache.org/viewvc/struts/maven/trunk/struts2-archetype-blank/</url>
     </scm>
 
 </project>
