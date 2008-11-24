@@ -22,7 +22,19 @@
         </s:url>
         <s:a href="%{url}">Espanol</s:a>
     </li>
+    <li>
+        <s:url id="url" action="HelloWorld">
+            <s:param name="request_locale">de</s:param>
+        </s:url>
+        <s:a href="%{url}">Deutsch</s:a>
+    </li>
 </ul>
+
+<p>
+<s:url id="url" action="Welcome"/>
+<s:a href="%{url}">Welcome !</s:a>
+</p>
+
 
 </body>
 </html>
