@@ -15,7 +15,6 @@
 	<resource>src/main/webapp/WEB-INF/jsp/edit/index.jsp</resource>
 	<resource>src/main/webapp/WEB-INF/web.xml</resource>
 	<resource>src/main/webapp/WEB-INF/portlet.xml</resource>
-	<resource>src/main/webapp/WEB-INF/jetty-pluto-web-default.xml</resource>
   </resources>
 </archetype>
 
