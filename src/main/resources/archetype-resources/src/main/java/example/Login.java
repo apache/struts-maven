@@ -19,7 +19,7 @@
  * under the License.
  */
 
-package example;
+package ${package}.example;
 
 public class Login extends ExampleSupport {
 
