@@ -19,7 +19,7 @@
  * under the License.
  */
 
-package example;
+package ${package}.example;
 
 /**
  * <code>Set welcome message.</code>

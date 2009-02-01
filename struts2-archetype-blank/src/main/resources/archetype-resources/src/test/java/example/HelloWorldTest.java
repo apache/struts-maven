@@ -19,12 +19,12 @@
  * under the License.
  */
 
-package example;
+package ${package}.example;
 
 import com.opensymphony.xwork2.ActionSupport;
-import junit.framework.TestCase;
+import org.apache.struts2.StrutsTestCase;
 
-public class HelloWorldTest extends TestCase {
+public class HelloWorldTest extends StrutsTestCase {
 
     public void testHelloWorld() throws Exception {
         HelloWorld hello_world = new HelloWorld();
