@@ -265,6 +265,14 @@
             <role>Committer</role>
          </roles>
       </developer>
+      <developer>
+         <name>Mathias Bogaert</name>
+         <id>pathos</id>
+         <email>pathos at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
    </developers>
    <distributionManagement>
       <repository>
