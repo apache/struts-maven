@@ -273,6 +273,14 @@
             <role>Committer</role>
          </roles>
       </developer>
+      <developer>
+         <name>Lukasz Lenart</name>
+         <id>lukaszlenart</id>
+         <email>lukaszlenart at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
    </developers>
    <distributionManagement>
       <repository>
