@@ -464,3 +464,40 @@ Tu5JDgybjgU3MZBAf+Y31v3fxKTknbXKt2WISQQYEQIACQUCSfCjOwIbDAAKCRBp
 ssWl2Es=
 =g84f
 -----END PGP PUBLIC KEY BLOCK-----
+pub   1024D/B56DEDEC 2009-04-28 [expires: 2011-04-28]
+      Key fingerprint = 970C F2E9 34B3 90EE 9EAF  962D AE2E F622 B56D EDEC
+uid                  Wes Wannemacher (Signing Apache Distributions) <wesw@apache.org>
+sig 3        B56DEDEC 2009-04-28  Wes Wannemacher (Signing Apache Distributions) <wesw@apache.org>
+sub   2048g/18069795 2009-04-28 [expires: 2011-04-28]
+sig          B56DEDEC 2009-04-28  Wes Wannemacher (Signing Apache Distributions) <wesw@apache.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+mQGiBEn3E4cRBAD6mFcdavqwRdC33ojiRS9UF1pXflagxMgSixUQy7TZyr9Zu3i/
+1skcGg+XUggRMTKTO3TKwQLUAZMpTvWQ8PGEypPXHqW8ayfCNT9DVkuYs6Z/jack
+HriXJltDQm28qXSm3SCiWi63l9wfyeWCewrywwQ0iqRpm4f98abMEV0lQwCgsJb+
+d5RrrY/xZLgDqfgyxVX7oi8EAPXLzjCsuowi0JcO2sivOk3X0hWCNyAQL5HWdRdH
+0wjLnNRN+8HHV6shAFIcLrUsJhxZU7bDrqXvq0ZFoqnfKH1mgAgNtANhlp56G6x3
+M6nwufShsrJyT4/qbQc3y+6NWY+PV9cXycAFk8qDmIbaDf/zUyhp511Ucu8qulzs
+5LFrBACSku+G6koe7sqxfOQkwovuUYiUVNot8Fr03B03M1f6jAqInutLagfqidgF
+wDJZuzRXewfkYss6juivHD9QlBSIL5UXeBWLb99HTGFVnvo2WKBBHeQ3ieqqiZx0
+WpEzFM6OVX17hF1vzCySHw5q7xrsr7QQZ57nfSncBAzX8oSYPbRAV2VzIFdhbm5l
+bWFjaGVyIChTaWduaW5nIEFwYWNoZSBEaXN0cmlidXRpb25zKSA8d2Vzd0BhcGFj
+aGUub3JnPohmBBMRAgAmBQJJ9xOHAhsDBQkDwmcABgsJCAcDAgQVAggDBBYCAwEC
+HgECF4AACgkQri72IrVt7ewVXgCfUpcpnP3ljoA2JkWkWFm6DrLDBdQAnjXhJo+b
+2knSQYEhWgohfp9TJiaQuQINBEn3E4cQCADFN/znE5Wk5tJtHXnGgxaYEANY3Kc6
+L8Zp9f/uqMbKXe9Ky4RNji2Yx+J7jvLFT9jAgpkQmO4R2ojIbtc1yYrthVeERYHF
+oYqyKFzI+ZxpM0SCs/kkEMT11UQCZ941NixLrdkT+gt1/H529LdtI+M5e4P7vTlG
+0X7Hws8z+sZqDwuVMy94qtPJnSiGxeZc0S6ZxoxJBxIDTdGSDtnu+Nv1jaB7lyG1
+2v7RiTko7Ye7buAsFuQGF8dX8p2TdChd7boXY/VelNqsZccXpybj1M7S/mIvQCI3
+fCp3IeVFrbzPzQwM6QBaxaNMBXlHv0ieQchGOmQxK+W7p9pEk1EbXIhLAAMFB/9G
+BEKeYRd1JJASXaQX2SJK+FTvaGeepaWTqUnOd3Tw4RhjxP1UTpVdWYEpp7i9WRDc
+0q4F7WgbOnyGt+w1esPsjhc/m5eznXF3h/03h+yz3J9oP4iKBSwATTMnGDBDt2Yq
+N1Pmx0Nl30tvkrkffL2qdio/aWRV9jKKoL/h7QtgM6InO2dBf8BjauZvFaMyt0i+
+wqZtJko9rZ5UHXbU1FLzyyyN6PlHktDhO8VaCOFNBcmZ9JJZMP1LPiA1fE7Oipbu
+HGeopYDr34xp9NQeP/gILGdZwnmScl3Edjms19sLnZzRCRSGAYwqyxDJvUtyBHcA
+iyDHVsME8V688vPxA1IaiE8EGBECAA8FAkn3E4cCGwwFCQPCZwAACgkQri72IrVt
+7ezCcACfU1IVPxZJdGJH2yZ3skUQ6Rb/hnkAn1JhYvhyPNivr9BctsSq1tyIgAF6
+=K6Iu
+-----END PGP PUBLIC KEY BLOCK-----
