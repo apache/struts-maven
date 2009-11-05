@@ -7,58 +7,81 @@
     <artifactId>${artifactId}</artifactId>
     <packaging>war</packaging>
     <name>My Portlet Application</name>
-	<version>${version}</version>
-	
-	<dependencies>
-		<dependency>
-			<groupId>javax.portlet</groupId>
-			<artifactId>portlet-api</artifactId>
-			<version>1.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-portlet-plugin</artifactId>
-			<version>2.1.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.bekk.boss</groupId>
-			<artifactId>maven-jetty-pluto-embedded</artifactId>
-			<version>1.0.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty</artifactId>
-			<version>6.1.14</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jsp-2.1</artifactId>
-			<version>6.1.14</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
+    <version>${version}</version>
 
-	<build>
-		<plugins>
-			<plugin>
-      			<artifactId>maven-compiler-plugin</artifactId>
-      			<configuration>
-        				<source>1.5</source>
-        				<target>1.5</target>
-      			</configuration>
-    			</plugin>
-		</plugins>
-	</build>
-	
-	<profiles>
+    <properties>
+        <struts2.version>2.1.8</struts2.version>
+    </properties>
+
+    <dependencies>
+
+        <!--  Struts 2 -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-portlet-plugin</artifactId>
+            <version>${struts2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-config-browser-plugin</artifactId>
+            <version>${struts2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.portlet</groupId>
+            <artifactId>portlet-api</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.bekk.boss</groupId>
+            <artifactId>maven-jetty-pluto-embedded</artifactId>
+            <version>1.0.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty</artifactId>
+            <version>6.1.21</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jsp-2.1</artifactId>
+            <version>6.1.14</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
         <profile>
             <id>pluto-embedded</id>
             <build>
                 <plugins>
-					<plugin>
+                    <plugin>
                         <groupId>org.apache.pluto</groupId>
                         <artifactId>maven-pluto-plugin</artifactId>
                         <version>1.1.6</version>
@@ -66,7 +89,7 @@
                             <execution>
                                 <phase>generate-resources</phase>
                                 <goals>
-                                   <goal>assemble</goal>
+                                    <goal>assemble</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -74,12 +97,13 @@
                     <plugin>
                         <groupId>org.mortbay.jetty</groupId>
                         <artifactId>maven-jetty-plugin</artifactId>
-						<configuration>
-							<webXml>${project.build.directory}/pluto-resources/web.xml</webXml>	
-							<webAppConfig>
-								<contextPath>/${project.artifactId}</contextPath>
-								<defaultsDescriptor>/WEB-INF/jetty-pluto-web-default.xml</defaultsDescriptor>
-							</webAppConfig>
+                        <version>6.1.21</version>
+                        <configuration>
+                            <webXml>${project.build.directory}/pluto-resources/web.xml</webXml>
+                            <webAppConfig>
+                                <contextPath>/${project.artifactId}</contextPath>
+                                <defaultsDescriptor>/WEB-INF/jetty-pluto-web-default.xml</defaultsDescriptor>
+                            </webAppConfig>
                             <systemProperties>
                                 <systemProperty>
                                     <name>org.apache.pluto.embedded.portletIds</name>
@@ -87,13 +111,13 @@
                                 </systemProperty>
                             </systemProperties>
                         </configuration>
-						<dependencies>
-							<dependency>
-				                <groupId>com.bekk.boss</groupId>
-				                <artifactId>maven-jetty-pluto-embedded</artifactId>
-				                <version>1.0.1</version>
-		                    </dependency>
-						</dependencies>
+                        <dependencies>
+                            <dependency>
+                                <groupId>com.bekk.boss</groupId>
+                                <artifactId>maven-jetty-pluto-embedded</artifactId>
+                                <version>1.0.1</version>
+                            </dependency>
+                        </dependencies>
                     </plugin>
                 </plugins>
             </build>
