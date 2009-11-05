@@ -9,13 +9,7 @@
 
     <filter id="filterdispatcher">
 		<filter-name>struts</filter-name>
-		<filter-class>
-			org.apache.struts2.dispatcher.FilterDispatcher
-		</filter-class>
-        <init-param>
-            <param-name>actionPackages</param-name>
-            <param-value>${package}</param-value>
-        </init-param>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
     </filter>
 
 	<filter-mapping>
@@ -24,21 +18,20 @@
 	</filter-mapping>
  
     <listener>
-		<listener-class>
-			org.springframework.web.context.ContextLoaderListener
-		</listener-class>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
     
     <listener>
-		<listener-class>
-			org.apache.struts2.portlet.context.ServletContextHolderListener
-		</listener-class>
+		<listener-class>org.apache.struts2.portlet.context.ServletContextHolderListener</listener-class>
 	</listener>
 
 	<servlet id="preparator">
 		<servlet-name>preparator</servlet-name>
-		<servlet-class>
-			org.apache.struts2.portlet.context.PreparatorServlet
-		</servlet-class>
+		<servlet-class>org.apache.struts2.portlet.context.PreparatorServlet</servlet-class>
 	</servlet>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
 </web-app>

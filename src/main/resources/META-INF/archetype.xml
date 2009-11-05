@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <archetype>
-  <id>struts2-archetype-blank</id>
+  <id>struts2-archetype-dbblank</id>
   <sources>
     <source>src/main/java/view/IndexAction.java</source>
     <source>src/main/java/edit/IndexAction.java</source>
