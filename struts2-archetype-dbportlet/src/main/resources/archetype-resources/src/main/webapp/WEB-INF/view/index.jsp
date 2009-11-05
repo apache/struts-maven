@@ -15,6 +15,6 @@ This a simple table showing the database data:
  </s:iterator>
 </table>
 <ul>
-<li><a href="<s:url action="index" portletMode="edit"/>">Go to edit mode and see what's there</a></li>
-<li><a href="<s:url action="index" portletMode="help"/>">Go to help mode and see what's there</a></li>
+<li><a href="<s:url action="index" portletMode="edit" namespace="/edit"/>">Go to edit mode and see what's there</a></li>
+<li><a href="<s:url action="index" portletMode="help" namespace="/help"/>">Go to help mode and see what's there</a></li>
 </ul>
