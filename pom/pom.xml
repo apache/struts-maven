@@ -90,7 +90,7 @@
          <id>martinc</id>
          <email>martinc at apache.org</email>
          <roles>
-            <role>PMC Chair</role>
+            <role>PMC Member</role>
          </roles>
       </developer>
       <developer>
@@ -154,7 +154,7 @@
          <id>rgielen</id>
          <email>rgielen at apache.org</email>
          <roles>
-            <role>PMC Member</role>
+            <role>PMC Chair</role>
          </roles>
       </developer>
       <developer>
