@@ -584,3 +584,41 @@ wr59iQuroEouV71h9SVpSElLhTOw5rRK+AU+cBIkzvfv9dBcVNlzmsAnrJ1+Gqex
 NrjTmQt9KnGO87EwAlPDwf0hjw==
 =x2yb
 -----END PGP PUBLIC KEY BLOCK-----
+pub   2048R/781D82C8 2011-09-02 [scadenza: 2013-09-01]
+      Key fingerprint = FD82 0E95 FD28 21C3 66E2  2A4F 0B99 A758 781D 82C8
+uid                  Maurizio Cucchiara (Apache Software Foundation) <mcucchiara@apache.org>
+sig 3        781D82C8 2011-09-02  Maurizio Cucchiara (Apache Software Foundation) <mcucchiara@apache.org>
+sub   2048R/90BC4DEE 2011-09-02 [scadenza: 2013-09-01]
+sig          781D82C8 2011-09-02  Maurizio Cucchiara (Apache Software Foundation) <mcucchiara@apache.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+mQENBE5g5poBCADuuGFiQfDMafv1F2pkNuggVlPDGbVG4a2E8lEEyaJ6GwEDUO8k
+N+MNmOP7pH7Bwa9GKv1iy3YKKR5dYmwu0oRZnkGPQxX51ft9vZUrQj5IKgPZWj1p
+P75hp/AOXw0UFIQyhSrCQhnwYRWe7WLQ2x/FgpvVudb/YjFr4E7wpX3QrmxCaBWQ
+wokBQlTiFDgEX50hYllvt23EL2A0siPWW84CFV7yx3fQoR1Y445OBIs3SS6gGBTS
+Ae9OcXKhaYl7panNj8CEQCAzs3LpJuRaJN1zMn9ZqLLyviBCfEI7bINCd3ptw28k
+/JP9CEjMXn6Zr2MyfbedI1C9VkAQvmo6PpxxABEBAAG0R01hdXJpemlvIEN1Y2No
+aWFyYSAoQXBhY2hlIFNvZnR3YXJlIEZvdW5kYXRpb24pIDxtY3VjY2hpYXJhQGFw
+YWNoZS5vcmc+iQE+BBMBAgAoBQJOYOaaAhsDBQkDwmcABgsJCAcDAgYVCAIJCgsE
+FgIDAQIeAQIXgAAKCRALmadYeB2CyOA7B/4lTOghcPFdjF0AMfDRY8/STJwrxdJ7
+YNc+CbaodnZp+0W6Ucm01uEihA+UEbnHD2a4ftb6qs4nTqR/9+JcMInect/FyB26
+31n895uaUiYAPhAawMPl4iVtrlzwsiutBPX0mRX80Ba9BlHVc65tDCJduQtYt/qV
+bxiLlHHXllvDssbvzNnzpXqngh+Dznal7D9NPhUZ6biLismhEJnS0fmCe2eOfQGt
+qzeuhhie2UiMZ5uxvh8jM4Q7yPuPVsJCGZT0olDNDUj6aMzdtxW1nmhb60Rd7i5T
+GPC/ZL8P7Phpdefd6Jp86aPrzJzrQUjy9lrj10kfgM1PrmXYrrz30tpHuQENBE5g
+5poBCACljdOCMwbE6/VHwjDtm0/JyhTuXFSTLDl5qiUc3uBzSjUv7YkR2IogP8cy
+q4QE3YqCJ6WxknXkULMEYa4lnxT95bRCsrGB1LPasLqTiLzu18jNU8qABwzpzhjt
+/jSRTKfztZUHjTBj+6FC3e5XwRjZCLXMsKVTWn0zRdLUAdHLhSsbpsY6Umh+ZWAC
+AUot7Q7w7mg302wveWcGS/8pBByblQlZF1UyCnI2oG0SqYuBrnjoQYyjr7UUxpoi
+c4DZWaCAfwxKW7cawkx56dLNGdsp6kqkrh75AzsOYeUejg7ZEejd25LW9fFclHH9
+8lSWo0iUIND9uLWh4+Q/1Mp+kZLpABEBAAGJASUEGAECAA8FAk5g5poCGwwFCQPC
+ZwAACgkQC5mnWHgdgsj0fQgAiubb3N8umspDTpVcThXxG0xww+S1gQyD2LguZmrn
+AJ9+/KiNozm23dT9zJBCioeBB8yKFU+6FQFLXoyWlqT7OlFSdJfCmi2C6ii9n5DT
+sYKUrfPdQw5Ci7jPXUerIkTU2BHorJ7LWH2vCuFJF/BQ61RS0ZSOMKj+/vYX1f8o
+E7CgiD7f1W2O2wHnI0Fcbp8mn+aQCuf7lUDHq+8Yf600QuxK0SbHHt/Lpsv7pTa1
+uOoaNC9mvmwWLBbFCPe8lV9lI4M0xs5iGVE95YKi1Lv9klQFX4PKV9D+b/j+XyXp
+VGHIPy7ypAHT0ovi7i8xKLV3FWxvxllVW7rgJwbaHDngXQ==
+=+T+s
+-----END PGP PUBLIC KEY BLOCK-----
