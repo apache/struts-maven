@@ -261,6 +261,14 @@
             <role>PMC Member</role>
          </roles>
       </developer>
+      <developer>
+         <name>Maurizio Cucchiara</name>
+         <id>mcucchiara</id>
+         <email>mcucchiara at apache.org</email>
+         <roles>
+            <role>Committer</role>
+         </roles>
+      </developer>
    </developers>
    <distributionManagement>
       <site>
@@ -273,7 +281,7 @@
       <plugins>
          <plugin>
             <artifactId>maven-release-plugin</artifactId>
-            <version>2.0-beta-7</version>
+            <version>2.2.1</version>
             <configuration>
                <releaseProfiles>release</releaseProfiles>
                <goals>deploy</goals>
