@@ -7,14 +7,14 @@
     </parent>
     <groupId>org.apache.struts</groupId>
     <artifactId>struts-master</artifactId>
-    <version>9</version>
+    <version>10-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Apache Struts</name>
 
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/maven/tags/STRUTS_MASTER_9</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/maven/tags/STRUTS_MASTER_9</developerConnection>
-        <url>http://svn.apache.org/repos/asf/struts/maven/tags/STRUTS_MASTER_9</url>
+        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/maven/trunk/pom</connection>
+        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/maven/trunk/pom</developerConnection>
+        <url>http://svn.apache.org/repos/asf/struts/maven/trunk/pom</url>
     </scm>
 
     <description>
